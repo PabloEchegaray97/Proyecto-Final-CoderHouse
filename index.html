@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- css interno -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- iconos -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="resources/favicon.ico" type="image/x-icon">
+    <!-- animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>El patio</title>
+</head>
+
+<body class="body-i">
+    <header class="header-i">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent nav-menu escritorio">
+            <div class="container-fluid align-items-start">
+                <a class="navbar-brand logo" href="#"><img src="resources/el-patio.svg" alt=""></a>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link font-mod" href="pages/carta.html">Carta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-mod" href="pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-mod" href="pages/reservas.html">Reservas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-mod" href="pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-menu movil fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand logo" href="#"><img src="resources/el-patio.svg" alt=""></a>
+                <button class="navbar-toggler border-nav" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link font-mod" href="pages/carta.html">Carta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-mod" href="pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-mod" href="pages/reservas.html">Reservas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-mod" href="pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="video-container">
+            <img src="resources/el-patio-resto3.jpg" alt="" class="video-preview">
+            <div class="slogan-container">
+                <h2 class="slogan">Sabores que hacen bien al corazón</h2>
+            </div>
+            <a href="pages/carta.html" class="boton-carta animate__animated animate__slideInUp">Ver carta</a>
+        </div>
+
+    </header>
+    <main class="main-i">
+        <div class="gallery-container">
+            <div class="gallery-intro">
+                <h3 class="gallery-text">Deleitate con nuestros platos</h3>
+                <h3 class="gallery-text-c">-Amor al primer taco<i class='bx bxs-heart corazon'></i></h3>
+            </div>
+            <div class="gallery-main">
+                <a href="pages/carta.html"><img src="resources/1-lite.png" alt="" class="gallery__item"
+                        data-aos="fade-down"></a>
+                <a href="pages/carta.html"><img src="resources/fajitas (1).jpg" alt="" class="gallery__item"
+                        data-aos="fade-down"></a>
+                <a href="pages/carta.html"><img src="resources/nachos.jpg" alt="" class="gallery__item"
+                        data-aos="fade-down"></a>
+                <a href="pages/carta.html"><img src="resources/4-lite.png" alt="" class="gallery__item"
+                        data-aos="fade-down"></a>
+            </div>
+        </div>
+        <div>
+            <div class="map">
+                <i class='bx bxs-map map-icon map-icon'></i>
+                <h2 class="map-text">¿Dónde estamos?</h2>
+                <h2 class="map-text light">Bandera de Los Andes 1925</h2>
+                <h2 class="map-text map-text-m light">Ciudad de Mendoza</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.082460866442!2d-68.813516084815!3d-32.89598798093634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e093530f07335%3A0x35bdacd2405bd1!2sAv.%20Bandera%20de%20los%20Andes%201923%2C%20M5521ION%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1650436734595!5m2!1ses-419!2sar"
+                    class="map-iframe" width="700" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </main>
+    <section class="section-i-mod d-flex justify-content-center">
+        <div class="side-photo">
+            <img src="resources/foto-side-lite.png" alt="sobre-nosotros-elpatio" class="side-photo-item">
+        </div>
+    </section>
+    <aside class="aside-i">
+        <div class="aside-block">
+            <h3 class="aside-intro">Sobre nosotros</h3>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, vel fuga natus dignissimos itaque
+                    fugit harum. Quod labore tenetur quidem pariatur officiis, iusto dolores voluptates quo fugiat in
+                    nostrum blanditiis.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque eius hic ullam ad est eligendi
+                    adipisci ex, incidunt dolores consequuntur eos pariatur esse consequatur aspernatur, ipsam deserunt
+                    quod nostrum tenetur.
+            </div>
+            <a href="pages/nosotros.html" class="boton-intro boton-sobre">Ver más</a>
+        </div>
+    </aside>
+    <footer class="footer-i bg-menu">
+        <div class="footer-container">
+            <div class="footer-redes">
+                <a href="#"><i class='bx bxl-whatsapp'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <!-- ------ -->
+</body>
+
+</html>

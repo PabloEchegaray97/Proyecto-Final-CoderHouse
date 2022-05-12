@@ -1,0 +1,128 @@
+@import '../base/variables';
+@import '../base/listas';
+@import '../base/mapas';
+.header-i {
+    grid-area: header;
+    background-color: transparent;
+    .nav-menu {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        background: $bg-color-nav-footer;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        div {
+            .logo{
+                width: 6rem;
+                margin-top: 1rem;
+                margin-left: 1rem;
+                z-index: 1;
+            @media screen and (max-width: 450px) {
+                width: 2.8rem;
+                margin: 0 0 0 1rem;
+            }
+            @media (min-width:451px) and (max-width:992px) {
+                width: 3.6rem;
+                margin: 0;
+            }
+            }
+        }
+        @media screen and (max-width: 450px) {
+            display: none;
+        }
+        @media (min-width:451px) and (max-width:992px) {
+            display: none;
+        }
+    }
+    .movil {
+    display:none;
+    background-color: $bg-color-nav-footer;
+    @media screen and (max-width:450px) {
+        display: block;    
+    }
+    @media (min-width:451px) and (max-width:992px) {
+        display: block;
+    }
+    div {
+        .logo{
+            width: 6rem;
+            margin-top: 1rem;
+            margin-left: 1rem;
+            z-index: 1;
+        @media screen and (max-width: 450px) {
+            width: 2.8rem;
+            margin: 0 0 0 1rem;
+        }
+        @media (min-width:451px) and (max-width:992px) {
+            width: 3.6rem;
+            margin: 0;
+        }
+        }
+    }
+    }
+    
+    .video-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .video-preview {
+            width: 100%;
+            position: relative;
+            height: 100vh;
+            object-fit: cover;
+        
+        }
+        .slogan-container {
+            color: $color-texto-alt;
+            position: absolute;
+            font-family: 'Dancing Script', cursive;
+        
+            .slogan {
+                font-size: 4rem;
+                text-shadow: 1px 1px  black;
+                color: $color-texto-alt;
+                @media screen and (max-width:450px) {
+                    font-size: nth($font-size,2);
+                }
+                @media (min-width:451px) and (max-width:992px) {
+                    font-size: nth($font-size,3);
+                }
+            }
+        @media screen and (max-width:450px) {
+                margin-top: 3rem;
+                position: absolute;
+                z-index: 1;
+        }
+        }
+        .boton-carta {
+            padding: .2rem 1rem;
+            background-color: map-get($boton-carta,bg-boton);
+            position: absolute;
+            margin-top: 10rem;
+            border-radius: .3rem;
+            color: map-get($boton-carta,color-carta);
+            font-family: 'Poppins', sans-serif;
+            font-weight: map-get($boton-carta, f-weight );
+            font-size: map-get($boton-carta, f-size);
+            text-decoration: none;
+            &:hover {
+                color: $color-texto-hover;
+            }
+        @media screen and (max-width:450px) {
+                position: absolute;
+                margin-top: 10rem;
+                font-size: 1.1rem;
+        }
+        }
+        
+        
+        
+    @media screen and (max-width:450px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    }
+
+}
