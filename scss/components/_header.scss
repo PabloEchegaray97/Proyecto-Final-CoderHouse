@@ -27,6 +27,16 @@
                 margin: 0;
             }
             }
+            div {
+                ul {
+                    li {
+                        a {
+                            font-size: 1.2rem;
+                            font-family: 'Poppins',sans-serif;
+                        }
+                    }
+                }
+            }
         }
         @media screen and (max-width: 450px) {
             display: none;
@@ -45,6 +55,9 @@
         display: block;
     }
     div {
+        .border-nav {
+            border-color:transparent !important;
+        }
         .logo{
             width: 6rem;
             margin-top: 1rem;
@@ -58,6 +71,16 @@
             width: 3.6rem;
             margin: 0;
         }
+        }
+        div {
+            ul {
+                li {
+                    a {
+                        font-size: 1.2rem;
+                        font-family: 'Poppins',sans-serif;
+                    }
+                }
+            }
         }
     }
     }

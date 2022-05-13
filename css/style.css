@@ -37,6 +37,10 @@
     margin: 0;
   }
 }
+.header-i .nav-menu div div ul li a {
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+}
 @media screen and (max-width: 450px) {
   .header-i .nav-menu {
     display: none;
@@ -61,6 +65,9 @@
     display: block;
   }
 }
+.header-i .movil div .border-nav {
+  border-color: transparent !important;
+}
 .header-i .movil div .logo {
   width: 6rem;
   margin-top: 1rem;
@@ -78,6 +85,10 @@
     width: 3.6rem;
     margin: 0;
   }
+}
+.header-i .movil div div ul li a {
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
 }
 .header-i .video-container {
   display: flex;
