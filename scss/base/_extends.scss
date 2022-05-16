@@ -1,0 +1,10 @@
+/*paquete de propiedades para utilizar en cualquier parte del directorio 
+placeholder = %*/
+
+%flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*se importa como 
+@extend %flex; */

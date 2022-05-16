@@ -1,23 +1,28 @@
 @import '../base/variables';
 @import '../base/listas';
 @import '../base/mapas';
+
 .footer-i {
     grid-area: footer;
     background-color: $bg-color-nav-footer;
-    .footer-container {
-        .footer-redes  {
-            font-size: 2.4rem;
-            color: var(--amarillo);
-            display: flex;
-            justify-content: flex-end;
-            i {
-                padding: 0 1rem;
-                color: $color-texto-alt;
+
+    .footer-redes {
+        font-size: 2.4rem;
+        color: var(--amarillo);
+        display: flex;
+        justify-content: flex-end;
+
+        i {
+            padding: 0 1rem;
+            color: $color-texto-alt;
+
             &:hover {
                 color: $color-texto-hover;
             }
-            }
-            
+        }
+
+        @media screen and (max-width:450px) {
+            justify-content: center;
         }
     }
 }

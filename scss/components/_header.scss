@@ -9,52 +9,35 @@
         z-index: 1;
         width: 100%;
         background: $bg-color-nav-footer;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        div {
-            .logo{
-                width: 6rem;
-                margin-top: 1rem;
-                margin-left: 1rem;
-                z-index: 1;
-            @media screen and (max-width: 450px) {
-                width: 2.8rem;
-                margin: 0 0 0 1rem;
-            }
-            @media (min-width:451px) and (max-width:992px) {
-                width: 3.6rem;
-                margin: 0;
-            }
-            }
-            div {
-                ul {
-                    li {
-                        a {
-                            font-size: 1.2rem;
-                            font-family: 'Poppins',sans-serif;
-                        }
-                    }
-                }
-            }
-        }
+        @extend %flex;
+        .logo{
+            width: 6rem;
+            margin-top: 1rem;
+            margin-left: 1rem;
+            z-index: 1;
         @media screen and (max-width: 450px) {
-            display: none;
+            width: 2.8rem;
+            margin: 0 0 0 1rem;
         }
         @media (min-width:451px) and (max-width:992px) {
-            display: none;
+            width: 3.6rem;
+            margin: 0;
         }
+        }
+    @media screen and (max-width: 992px) {
+        display: none;
+    }
+    }
+    .font-mod {
+        font-size: 1.2rem;
+        font-family: $fuente-ppal;
     }
     .movil {
     display:none;
     background-color: $bg-color-nav-footer;
-    @media screen and (max-width:450px) {
+    @media screen and (max-width:992px) {
         display: block;    
     }
-    @media (min-width:451px) and (max-width:992px) {
-        display: block;
-    }
-    div {
         .border-nav {
             border-color:transparent !important;
         }
@@ -72,23 +55,9 @@
             margin: 0;
         }
         }
-        div {
-            ul {
-                li {
-                    a {
-                        font-size: 1.2rem;
-                        font-family: 'Poppins',sans-serif;
-                    }
-                }
-            }
-        }
     }
-    }
-    
     .video-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %flex;
         .video-preview {
             width: 100%;
             position: relative;
@@ -96,52 +65,46 @@
             object-fit: cover;
         
         }
-        .slogan-container {
+    }
+    .slogan-container {
+        color: $color-texto-alt;
+        position: absolute;
+        font-family: $fuente-sec;
+    
+        .slogan {
+            font-size: 4rem;
+            text-shadow: 1px 1px  black;
             color: $color-texto-alt;
-            position: absolute;
-            font-family: 'Dancing Script', cursive;
-        
-            .slogan {
-                font-size: 4rem;
-                text-shadow: 1px 1px  black;
-                color: $color-texto-alt;
-                @media screen and (max-width:450px) {
-                    font-size: nth($font-size,2);
-                }
-                @media (min-width:451px) and (max-width:992px) {
-                    font-size: nth($font-size,3);
-                }
+            @media screen and (max-width:450px) {
+                font-size: nth($font-size,2);
             }
-        @media screen and (max-width:450px) {
-                margin-top: 3rem;
-                position: absolute;
-                z-index: 1;
-        }
-        }
-        .boton-carta {
-            padding: .2rem 1rem;
-            background-color: map-get($boton-carta,bg-boton);
-            position: absolute;
-            margin-top: 10rem;
-            border-radius: .3rem;
-            color: map-get($boton-carta,color-carta);
-            font-family: 'Poppins', sans-serif;
-            font-weight: map-get($boton-carta, f-weight );
-            font-size: map-get($boton-carta, f-size);
-            text-decoration: none;
-            &:hover {
-                color: $color-texto-hover;
+            @media (min-width:451px) and (max-width:992px) {
+                font-size: nth($font-size,3);
             }
-        @media screen and (max-width:450px) {
-                position: absolute;
-                margin-top: 10rem;
-                font-size: 1.1rem;
-        }
         }
     @media screen and (max-width:450px) {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+            margin-top: 3rem;
+            position: absolute;
+            z-index: 1;
+    }
+    }
+    .boton-carta {
+        padding: .2rem 1rem;
+        background-color: map-get($boton-carta,bg-boton);
+        position: absolute;
+        margin-top: 10rem;
+        border-radius: .3rem;
+        color: map-get($boton-carta,color-carta);
+        font-family: $fuente-ppal;
+        font-weight: map-get($boton-carta, f-weight );
+        font-size: map-get($boton-carta, f-size);
+        text-decoration: none;
+        &:hover {
+            color: $color-texto-hover;
+        }
+    @media screen and (max-width:450px) {
+            position: absolute;
+            font-size: 1.1rem;
     }
     }
 
