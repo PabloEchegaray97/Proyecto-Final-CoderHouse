@@ -169,12 +169,12 @@
 .footer-i .footer-info .footer-text {
   color: rgb(255, 237, 179);
   font-family: "Poppins", sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   margin: 0;
   font-weight: 400;
 }
 .footer-i .footer-info .footer-text--mod {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
 .footer-i .footer-info .margin-footer {
   margin: 0.5rem 0 0.2rem 0;
@@ -201,7 +201,7 @@
   margin: 0 0.4rem 0 0;
 }
 .footer-i .footer-redes {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: rgb(255, 237, 179);
 }
 .footer-i .footer-redes .footer-icons {
@@ -392,12 +392,12 @@ placeholder = %*/
 .footer-i .footer-info .footer-text {
   color: rgb(255, 237, 179);
   font-family: "Poppins", sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   margin: 0;
   font-weight: 400;
 }
 .footer-i .footer-info .footer-text--mod {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
 .footer-i .footer-info .margin-footer {
   margin: 0.5rem 0 0.2rem 0;
@@ -424,7 +424,7 @@ placeholder = %*/
   margin: 0 0.4rem 0 0;
 }
 .footer-i .footer-redes {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: rgb(255, 237, 179);
 }
 .footer-i .footer-redes .footer-icons {
@@ -705,12 +705,12 @@ placeholder = %*/
 .footer-i .footer-info .footer-text {
   color: rgb(255, 237, 179);
   font-family: "Poppins", sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   margin: 0;
   font-weight: 400;
 }
 .footer-i .footer-info .footer-text--mod {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
 .footer-i .footer-info .margin-footer {
   margin: 0.5rem 0 0.2rem 0;
@@ -737,7 +737,7 @@ placeholder = %*/
   margin: 0 0.4rem 0 0;
 }
 .footer-i .footer-redes {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: rgb(255, 237, 179);
 }
 .footer-i .footer-redes .footer-icons {
@@ -798,6 +798,7 @@ placeholder = %*/
 }
 .form-container .form .form__item--mod {
   margin-bottom: 1rem;
+  resize: none;
 }
 .form-container .form .boton-contacto {
   padding: 0.2rem 1rem;

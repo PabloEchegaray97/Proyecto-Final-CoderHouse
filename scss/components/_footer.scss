@@ -17,12 +17,12 @@
         .footer-text {
             color: $color-texto-alt;
             font-family: $fuente-ppal;
-            font-size: .8rem;
+            font-size: .9rem;
             margin: 0;
             font-weight: 400;
         }
         .footer-text--mod {
-            font-size: .7rem;
+            font-size: .8rem;
         }
         .margin-footer {
             margin: .5rem 0 .2rem 0;
@@ -51,7 +51,7 @@
         }
     }
     .footer-redes {
-        font-size: nth($font-size,5);
+        font-size: nth($font-size,6);
         color: $color-texto-alt;
         @extend %flex;
 
