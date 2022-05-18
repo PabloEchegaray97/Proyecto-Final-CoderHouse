@@ -161,7 +161,7 @@
 }
 .footer-i .footer-redes {
   font-size: 2.4rem;
-  color: var(--amarillo);
+  color: rgb(255, 237, 179);
   display: flex;
   justify-content: flex-end;
 }
@@ -343,7 +343,7 @@ placeholder = %*/
 }
 .footer-i .footer-redes {
   font-size: 2.4rem;
-  color: var(--amarillo);
+  color: rgb(255, 237, 179);
   display: flex;
   justify-content: flex-end;
 }
