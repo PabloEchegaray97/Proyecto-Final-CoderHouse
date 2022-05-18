@@ -4,5 +4,7 @@ correccion etiquetas semanticas
 favicon en todos html
 meta description            ----- 180 palabras es lo ideal 70-320
 meta keywords               ----- 18 palabras clave es lo ideal
+meta open graph title description img url personalizado para cada html
+merge con master
 
 
