@@ -510,6 +510,10 @@ placeholder = %*/
   margin: 0 2rem;
 }
 
+.separador-mod {
+  margin: 0 2rem 0 0;
+}
+
 @media screen and (max-width: 992px) {
   .border-mid {
     margin-top: 1rem;
