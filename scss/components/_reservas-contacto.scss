@@ -78,8 +78,7 @@
         }
     }
     .icon-container {
-        @extend %flex;
-        flex-direction: column;
+        @include flex (flex,center,center,column);
         margin: .7rem;
         .info-icon {
             font-size: nth($font-size,8);

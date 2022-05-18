@@ -100,6 +100,9 @@
   }
 }
 .header-i .top-d {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 .header-i .top-d .top-i {
@@ -134,18 +137,19 @@
 }
 .header-i .boton-carta {
   padding: 0.2rem 1rem;
+  font-family: "Poppins", sans-serif;
   background-color: rgb(255, 237, 179);
+  color: #1d0e1c;
+  font-size: 1.5rem;
+  font-weight: 600;
   position: absolute;
   margin-top: 10rem;
   border-radius: 0.3rem;
-  color: #1d0e1c;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 1.5rem;
   text-decoration: none;
 }
 .header-i .boton-carta:hover {
-  color: #b2ea70;
+  color: hsl(343deg, 11%, 12%);
+  background-color: #b2ea70;
 }
 @media screen and (max-width: 450px) {
   .header-i .boton-carta {
@@ -159,6 +163,9 @@
   background-color: #1d0e1c;
 }
 .footer-i .footer-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 .footer-i .footer-info .footer-h1 {
@@ -181,6 +188,8 @@
 }
 .footer-i .footer-links {
   display: flex;
+  justify-content: start;
+  align-items: start;
   flex-direction: row;
   margin: 0;
   padding: 0;
@@ -221,7 +230,7 @@
 
 /*paquete de propiedades para utilizar en cualquier parte del directorio 
 placeholder = %*/
-.aside-i, .section-i-mod .side-photo, .info-add .icon-container, .header-i .nav-menu, .header-i .video-container, .header-i .top-d, .header-i .top-d .top-text, .footer-i, .footer-i .footer-info, .footer-i .footer-redes {
+.section-i-mod .side-photo, .header-i .nav-menu, .header-i .video-container, .header-i .top-d .top-text, .footer-i, .footer-i .footer-redes {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -323,6 +332,9 @@ placeholder = %*/
   }
 }
 .header-i .top-d {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 .header-i .top-d .top-i {
@@ -357,18 +369,19 @@ placeholder = %*/
 }
 .header-i .boton-carta {
   padding: 0.2rem 1rem;
+  font-family: "Poppins", sans-serif;
   background-color: rgb(255, 237, 179);
+  color: #1d0e1c;
+  font-size: 1.5rem;
+  font-weight: 600;
   position: absolute;
   margin-top: 10rem;
   border-radius: 0.3rem;
-  color: #1d0e1c;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 1.5rem;
   text-decoration: none;
 }
 .header-i .boton-carta:hover {
-  color: #b2ea70;
+  color: hsl(343deg, 11%, 12%);
+  background-color: #b2ea70;
 }
 @media screen and (max-width: 450px) {
   .header-i .boton-carta {
@@ -382,6 +395,9 @@ placeholder = %*/
   background-color: #1d0e1c;
 }
 .footer-i .footer-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 .footer-i .footer-info .footer-h1 {
@@ -404,6 +420,8 @@ placeholder = %*/
 }
 .footer-i .footer-links {
   display: flex;
+  justify-content: start;
+  align-items: start;
   flex-direction: row;
   margin: 0;
   padding: 0;
@@ -450,6 +468,7 @@ placeholder = %*/
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row;
   margin: 1rem 5rem;
 }
 @media screen and (max-width: 450px) {
@@ -644,6 +663,9 @@ placeholder = %*/
   }
 }
 .header-i .top-d {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 .header-i .top-d .top-i {
@@ -678,18 +700,19 @@ placeholder = %*/
 }
 .header-i .boton-carta {
   padding: 0.2rem 1rem;
+  font-family: "Poppins", sans-serif;
   background-color: rgb(255, 237, 179);
+  color: #1d0e1c;
+  font-size: 1.5rem;
+  font-weight: 600;
   position: absolute;
   margin-top: 10rem;
   border-radius: 0.3rem;
-  color: #1d0e1c;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 1.5rem;
   text-decoration: none;
 }
 .header-i .boton-carta:hover {
-  color: #b2ea70;
+  color: hsl(343deg, 11%, 12%);
+  background-color: #b2ea70;
 }
 @media screen and (max-width: 450px) {
   .header-i .boton-carta {
@@ -703,6 +726,9 @@ placeholder = %*/
   background-color: #1d0e1c;
 }
 .footer-i .footer-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 .footer-i .footer-info .footer-h1 {
@@ -725,6 +751,8 @@ placeholder = %*/
 }
 .footer-i .footer-links {
   display: flex;
+  justify-content: start;
+  align-items: start;
   flex-direction: row;
   margin: 0;
   padding: 0;
@@ -848,6 +876,9 @@ placeholder = %*/
   }
 }
 .info-add .icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   margin: 0.7rem;
 }
@@ -978,6 +1009,9 @@ placeholder = %*/
 .aside-i {
   grid-area: aside;
   font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   color: hsl(343deg, 11%, 12%);
   padding-top: 1rem;

@@ -7,9 +7,10 @@
     background-color: $bg-color-gral;
 }
 .main-c {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    @include flex(flex,space-between,center,row);
     margin: 1rem 5rem;
     @media screen and (max-width:450px) {
         display: block;

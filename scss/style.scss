@@ -139,8 +139,7 @@
 .aside-i {
     grid-area: aside;
     font-family: $fuente-ppal;
-    @extend %flex;
-    flex-direction: column;
+    @include flex(flex,center,center,column);
     color: $color-texto;
     padding-top: 1rem;
 

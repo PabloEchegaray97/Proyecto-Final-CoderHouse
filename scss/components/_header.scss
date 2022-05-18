@@ -1,6 +1,7 @@
 @import '../base/variables';
 @import '../base/listas';
 @import '../base/mapas';
+@import '../base/mixin';
 .header-i {
     grid-area: header;
     background-color: transparent;
@@ -84,8 +85,7 @@
     }
     /*header para paginas alternativas*/
     .top-d {
-        @extend %flex;
-        flex-direction: column;
+        @include flex(flex,center,center,column);
         .top-i {
             width: 100%;
             .top-img {
@@ -114,17 +114,18 @@
     }
     .boton-carta {
         padding: .2rem 1rem;
+        font-family: $fuente-ppal;
         background-color: map-get($boton-carta,bg-boton);
+        color: map-get($boton-carta,color-carta);
+        font-size: map-get($boton-carta, f-size);
+        font-weight: map-get($boton-carta,f-weight);
         position: absolute;
         margin-top: 10rem;
         border-radius: .3rem;
-        color: map-get($boton-carta,color-carta);
-        font-family: $fuente-ppal;
-        font-weight: map-get($boton-carta, f-weight );
-        font-size: map-get($boton-carta, f-size);
         text-decoration: none;
         &:hover {
-            color: $color-texto-hover;
+            color: $color-texto;
+            background-color: $color-texto-hover
         }
     @media screen and (max-width:450px) {
             position: absolute;
