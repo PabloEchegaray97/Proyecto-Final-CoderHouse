@@ -5,20 +5,64 @@
 .footer-i {
     grid-area: footer;
     background-color: $bg-color-nav-footer;
-
-    .footer-redes {
-        font-size: 2.4rem;
-        color: $color-texto-alt;
-        display: flex;
-        justify-content: flex-end;
-
-        i {
-            padding: 0 1rem;
+    @extend %flex;
+    .footer-info {
+        @extend %flex;
+        flex-direction: column;
+        .footer-h1 {
+            font-size: nth($font-size, 3 );
             color: $color-texto-alt;
+            font-family: $fuente-sec;
+        }
+        .footer-text {
+            color: $color-texto-alt;
+            font-family: $fuente-ppal;
+            font-size: .8rem;
+            margin: 0;
+            font-weight: 400;
+        }
+        .footer-text--mod {
+            font-size: .7rem;
+        }
+        .margin-footer {
+            margin: .5rem 0 .2rem 0;
 
+        }
+    }
+    .footer-links {
+        display: flex;
+        flex-direction: row;
+        margin:0;
+        padding: 0;
+        a {
+            text-decoration: none;
+        }
+        li {
+            list-style-type: none;
+        }
+        .footer-links__item {
+            margin: .5rem;
             &:hover {
                 color: $color-texto-hover;
             }
+        }
+        .footer-links__item--mod {
+            margin: 0 .4rem 0 0;
+        }
+    }
+    .footer-redes {
+        font-size: nth($font-size,5);
+        color: $color-texto-alt;
+        @extend %flex;
+
+        .footer-icons {
+            color: $color-texto-alt;
+            &:hover {
+                color: $color-texto-hover;
+            }
+        }
+        .footer-icons--mod {
+            margin: 0 1rem;
         }
 
         @media screen and (max-width:450px) {

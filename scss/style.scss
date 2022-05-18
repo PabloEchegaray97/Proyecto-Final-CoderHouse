@@ -5,6 +5,9 @@
 @import '../scss/base/extends';
 @import '../scss/components/carta';
 @import '../scss/components/reservas-contacto';
+::-webkit-scrollbar {
+    display: none;
+}
 .body-i {
     display: grid;
     background-color: $bg-color-gral;
@@ -128,6 +131,9 @@
             border-radius: .5rem;
         }
     }
+    @media screen and (max-width:450px) {
+        margin: 0 0 1rem 0;
+    }
 }
 
 .aside-i {
@@ -147,7 +153,8 @@
             padding: 1rem;
             text-align: center;
             @media screen and (max-width:992px) {
-                font-size: nth($font-size,4);
+                font-size: nth($font-size,6);
+                padding: 0;
             }
         }
 
@@ -175,6 +182,9 @@
     padding: 0;
     margin: .75rem 1rem 1rem 1rem;
     @media screen and (max-width:450px) {
-        margin-top: 76.03px;
+        margin: 76.03px .5rem 0 .5rem;
+    }
+    @media screen and (max-width:450px) {
+    text-align: center;
     }
 }
