@@ -502,6 +502,10 @@ placeholder = %*/
   text-align: center;
 }
 
+.variante {
+  font-weight: 700;
+}
+
 .separador {
   margin: 0 2rem;
 }
@@ -814,6 +818,10 @@ placeholder = %*/
 .form-container .form .boton-contacto:hover {
   color: #b2ea70;
 }
+.form-container .form .confirmacion {
+  font-size: 0.8rem;
+  text-align: center;
+}
 @media screen and (max-width: 450px) {
   .form-container {
     width: auto;
@@ -827,14 +835,13 @@ placeholder = %*/
   color: hsl(343deg, 11%, 12%);
   text-align: center;
 }
-@media screen and (max-width: 450px) {
-  .info-add {
-    display: block;
-    text-align: center;
-  }
-}
 .info-add .mas-info {
   font-size: 1.5rem;
+}
+@media screen and (max-width: 992px) {
+  .info-add .mas-info {
+    font-size: 1.2rem;
+  }
 }
 .info-add .icon-container {
   flex-direction: column;
@@ -845,6 +852,12 @@ placeholder = %*/
 }
 .info-add .icon-container .info-text {
   font-weight: 700;
+}
+@media screen and (max-width: 450px) {
+  .info-add {
+    display: block;
+    text-align: center;
+  }
 }
 
 ::-webkit-scrollbar {

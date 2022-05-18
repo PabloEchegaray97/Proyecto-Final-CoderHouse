@@ -56,6 +56,10 @@
                 color: $color-texto-hover;
             }
         }
+        .confirmacion {
+            font-size: .8rem;
+            text-align: center;
+        }
     }
     @media screen and (max-width:450px) {
         width: auto;
@@ -67,12 +71,11 @@
     font-family: $fuente-ppal;
     color: $color-texto;
     text-align: center;
-    @media screen and (max-width:450px) {
-        display: block;
-        text-align: center;
-    }
     .mas-info {
         font-size: nth($font-size,3);
+        @media screen and (max-width:992px) {
+        font-size: nth($font-size,2);
+        }
     }
     .icon-container {
         @extend %flex;
@@ -84,5 +87,10 @@
         .info-text {
             font-weight: 700;
         }
+    }
+    @media screen and (max-width:450px) {
+        display: block;
+        text-align: center;
+        
     }
 }
