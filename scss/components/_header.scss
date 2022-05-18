@@ -15,13 +15,8 @@
             margin-top: 1rem;
             margin-left: 1rem;
             z-index: 1;
-        @media screen and (max-width: 450px) {
-            width: 2.8rem;
-            margin: 0 0 0 1rem;
-        }
         @media (min-width:451px) and (max-width:992px) {
-            width: 3.6rem;
-            margin: 0;
+            display: none;
         }
         }
     @media screen and (max-width: 992px) {
@@ -76,16 +71,46 @@
             text-shadow: 1px 1px  black;
             color: $color-texto-alt;
             @media screen and (max-width:450px) {
-                font-size: nth($font-size,2);
+                font-size: nth($font-size,5);
             }
             @media (min-width:451px) and (max-width:992px) {
-                font-size: nth($font-size,3);
+                font-size: nth($font-size,5);
             }
         }
     @media screen and (max-width:450px) {
             margin-top: 3rem;
             position: absolute;
             z-index: 1;
+    }
+    }
+    /*header para paginas alternativas*/
+    .top-d {
+        @extend %flex;
+        flex-direction: column;
+        .top-i {
+            width: 100%;
+            .top-img {
+                position: relative;
+                width: 100%;
+            }
+        @media screen and (max-width:450px) {
+            display: none;
+        }
+        }
+        .top-text {
+            @extend %flex;
+            position:absolute;
+            color: $color-texto-alt;
+            font-family: $fuente-sec;
+            h2 {
+                font-size: nth($font-size,7);
+            }
+        }
+    @media screen and (max-width:450px) {
+        margin: 0;
+    }
+    @media (min-width:451px) and (max-width:992px) {
+        margin-top: 56px;
     }
     }
     .boton-carta {

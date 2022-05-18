@@ -1,0 +1,82 @@
+@import 'header.scss';
+@import 'footer.scss';
+@import '../base/variables';
+@import '../base/listas';
+@import '../base/mapas';
+.body-c {
+    background-color: $bg-color-gral;
+}
+.main-c {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 5rem;
+    @media screen and (max-width:450px) {
+        display: block;
+        margin: 0;   
+    }
+    @media (min-width:451px) and (max-width:992px) {
+        display: block; 
+    }
+    .margin-top-carta {
+        @media screen and (max-width:450px) {
+        margin-top: 76px;
+        }
+    }
+}
+.border-right-carta {
+    padding-left: 1rem;
+    border-right: 1px solid $color-texto;
+    @media screen and (max-width:992px) {
+        border: 0;    
+    }
+}
+.img-mod {
+    height: 20rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4%;
+    @media screen and (max-width:450px) {
+        height: 14rem;
+    }
+    @media (min-width:451px) and (max-width:992px) {
+        height: 17rem;
+    }
+}
+.item-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: nth($font-size,6);
+    text-align: center;
+}
+.separador {
+    margin: 0 2rem;
+}
+.border-mid {
+    @media screen and (max-width:992px) {
+        margin-top: 1rem;
+        padding-top: 2rem;
+        border-top: 1px solid $color-texto;
+    }
+}
+.border-top-carta-mod {
+    margin-top: 1rem;
+    padding-top: 2rem;
+    border-top: 1px solid $color-texto;
+}
+.border-top-carta {
+    border-top: 1px solid $color-texto;
+    margin-top: 1rem;
+    padding-top: 1rem;
+}
+.border-right-carta {
+    padding-left: 1rem;
+    border-right: 1px solid $color-texto;
+    @media screen and (max-width:992px) {
+        border: 0;
+    }
+}
+.margin-bottom-carta {
+    @media screen and (max-width:450px) {
+        margin-bottom: 1rem;
+    }
+}

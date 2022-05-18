@@ -3,7 +3,7 @@
 @import '../scss/base/mapas';
 @import '../scss/components/footer';
 @import '../scss/base/extends';
-
+@import '../scss/components/carta';
 .body-i {
     display: grid;
     background-color: $bg-color-gral;
@@ -24,24 +24,36 @@
             "footer";
     }
 }
+.body-i-mod {
+    @media (min-width:451px) and (max-width:992px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas: "header"
+                             "aside"
+                             "section"
+                             "main"
+                             "footer";
+    }
+
+}
 
 .main-i {
     grid-area: main;
-
+    background-color: $bg-color-gral;
     .gallery-intro {
         padding: 2rem 0;
         text-align: center;
 
         .gallery-text {
             font-family: $fuente-ppal;
-            font-size: 1.5rem;
+            font-size: nth($font-size,3);
             color: $color-texto;
         }
 
         .gallery-text-c {
             display: inline-block;
             font-family: $fuente-sec;
-            font-size: 1.8rem;
+            font-size: nth($font-size,4);
             color: $color-texto;
             align-items: center;
         }
@@ -83,12 +95,12 @@
         }
 
         .map-text {
-            font-size: 1.5rem;
+            font-size: nth($font-size,3);
         }
 
         .light {
             font-weight: 400;
-            font-size: 1.2rem;
+            font-size: nth($font-size,2);
         }
 
         .map-text-m {
@@ -130,16 +142,11 @@
 
         .aside-intro {
             font-family: $fuente-sec;
-            font-size: 4rem;
+            font-size: nth($font-size,7);
             padding: 1rem;
             text-align: center;
-
-            @media screen and (max-width:450px) {
-                font-size: 2.7rem;
-            }
-
-            @media (min-width:451px) and (max-width:992px) {
-                font-size: 2.7rem;
+            @media screen and (max-width:992px) {
+                font-size: nth($font-size,4);
             }
         }
 
@@ -150,7 +157,7 @@
             color: $color-texto-alt;
             margin-top: 1rem;
             border-radius: .5rem;
-            font-size: 1.5rem;
+            font-size: nth($font-size,3);
             text-decoration: none;
 
             &:hover {
@@ -161,5 +168,12 @@
 
     @media screen and (max-width:450px) {
         padding: 0;
+    }
+}
+.aside-i-mod {
+    padding: 0;
+    margin: .75rem 1rem 1rem 1rem;
+    @media screen and (max-width:450px) {
+        margin-top: 76.03px;
     }
 }

@@ -1,0 +1,20 @@
+@import 'header.scss';
+@import 'footer.scss';
+@import '../base/variables';
+@import '../base/listas';
+@import '../base/mapas';
+
+.section-i-mod {
+    grid-area: section;
+    background-color: $color-texto-alt;
+    margin: .75rem 1rem 1rem 1rem;
+
+    .side-photo {
+        @extend %flex;
+
+        .side-photo-item {
+            width: 94%;
+            border-radius: .5rem;
+        }
+    }
+}

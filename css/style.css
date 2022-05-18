@@ -9,6 +9,7 @@
 .header-i {
   grid-area: header;
   background-color: transparent;
+  /*header para paginas alternativas*/
 }
 .header-i .nav-menu {
   position: absolute;
@@ -22,16 +23,9 @@
   margin-left: 1rem;
   z-index: 1;
 }
-@media screen and (max-width: 450px) {
-  .header-i .nav-menu .logo {
-    width: 2.8rem;
-    margin: 0 0 0 1rem;
-  }
-}
 @media (min-width: 451px) and (max-width: 992px) {
   .header-i .nav-menu .logo {
-    width: 3.6rem;
-    margin: 0;
+    display: none;
   }
 }
 @media screen and (max-width: 992px) {
@@ -91,12 +85,12 @@
 }
 @media screen and (max-width: 450px) {
   .header-i .slogan-container .slogan {
-    font-size: 1.5rem;
+    font-size: 8rem;
   }
 }
 @media (min-width: 451px) and (max-width: 992px) {
   .header-i .slogan-container .slogan {
-    font-size: 2rem;
+    font-size: 8rem;
   }
 }
 @media screen and (max-width: 450px) {
@@ -104,6 +98,39 @@
     margin-top: 3rem;
     position: absolute;
     z-index: 1;
+  }
+}
+.header-i .top-d {
+  flex-direction: column;
+}
+.header-i .top-d .top-i {
+  width: 100%;
+}
+.header-i .top-d .top-i .top-img {
+  position: relative;
+  width: 100%;
+}
+@media screen and (max-width: 450px) {
+  .header-i .top-d .top-i {
+    display: none;
+  }
+}
+.header-i .top-d .top-text {
+  position: absolute;
+  color: rgb(255, 237, 179);
+  font-family: "Dancing Script", cursive;
+}
+.header-i .top-d .top-text h2 {
+  font-size: 2.5rem;
+}
+@media screen and (max-width: 450px) {
+  .header-i .top-d {
+    margin: 0;
+  }
+}
+@media (min-width: 451px) and (max-width: 992px) {
+  .header-i .top-d {
+    margin-top: 56px;
   }
 }
 .header-i .boton-carta {
@@ -153,7 +180,7 @@
 
 /*paquete de propiedades para utilizar en cualquier parte del directorio 
 placeholder = %*/
-.aside-i, .section-i-mod .side-photo, .header-i .nav-menu, .header-i .video-container {
+.aside-i, .section-i-mod .side-photo, .header-i .nav-menu, .header-i .video-container, .header-i .top-d, .header-i .top-d .top-text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -161,6 +188,278 @@ placeholder = %*/
 
 /*se importa como 
 @extend %flex; */
+.header-i {
+  grid-area: header;
+  background-color: transparent;
+  /*header para paginas alternativas*/
+}
+.header-i .nav-menu {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  background: #1d0e1c;
+}
+.header-i .nav-menu .logo {
+  width: 6rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  z-index: 1;
+}
+@media (min-width: 451px) and (max-width: 992px) {
+  .header-i .nav-menu .logo {
+    display: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  .header-i .nav-menu {
+    display: none;
+  }
+}
+.header-i .font-mod {
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+}
+.header-i .movil {
+  display: none;
+  background-color: #1d0e1c;
+}
+@media screen and (max-width: 992px) {
+  .header-i .movil {
+    display: block;
+  }
+}
+.header-i .movil .border-nav {
+  border-color: transparent !important;
+}
+.header-i .movil .logo {
+  width: 6rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  z-index: 1;
+}
+@media screen and (max-width: 450px) {
+  .header-i .movil .logo {
+    width: 2.8rem;
+    margin: 0 0 0 1rem;
+  }
+}
+@media (min-width: 451px) and (max-width: 992px) {
+  .header-i .movil .logo {
+    width: 3.6rem;
+    margin: 0;
+  }
+}
+.header-i .video-container .video-preview {
+  width: 100%;
+  position: relative;
+  height: 100vh;
+  object-fit: cover;
+}
+.header-i .slogan-container {
+  color: rgb(255, 237, 179);
+  position: absolute;
+  font-family: "Dancing Script", cursive;
+}
+.header-i .slogan-container .slogan {
+  font-size: 4rem;
+  text-shadow: 1px 1px black;
+  color: rgb(255, 237, 179);
+}
+@media screen and (max-width: 450px) {
+  .header-i .slogan-container .slogan {
+    font-size: 8rem;
+  }
+}
+@media (min-width: 451px) and (max-width: 992px) {
+  .header-i .slogan-container .slogan {
+    font-size: 8rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .header-i .slogan-container {
+    margin-top: 3rem;
+    position: absolute;
+    z-index: 1;
+  }
+}
+.header-i .top-d {
+  flex-direction: column;
+}
+.header-i .top-d .top-i {
+  width: 100%;
+}
+.header-i .top-d .top-i .top-img {
+  position: relative;
+  width: 100%;
+}
+@media screen and (max-width: 450px) {
+  .header-i .top-d .top-i {
+    display: none;
+  }
+}
+.header-i .top-d .top-text {
+  position: absolute;
+  color: rgb(255, 237, 179);
+  font-family: "Dancing Script", cursive;
+}
+.header-i .top-d .top-text h2 {
+  font-size: 2.5rem;
+}
+@media screen and (max-width: 450px) {
+  .header-i .top-d {
+    margin: 0;
+  }
+}
+@media (min-width: 451px) and (max-width: 992px) {
+  .header-i .top-d {
+    margin-top: 56px;
+  }
+}
+.header-i .boton-carta {
+  padding: 0.2rem 1rem;
+  background-color: rgb(255, 237, 179);
+  position: absolute;
+  margin-top: 10rem;
+  border-radius: 0.3rem;
+  color: #1d0e1c;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+.header-i .boton-carta:hover {
+  color: #b2ea70;
+}
+@media screen and (max-width: 450px) {
+  .header-i .boton-carta {
+    position: absolute;
+    font-size: 1.1rem;
+  }
+}
+
+.footer-i {
+  grid-area: footer;
+  background-color: #1d0e1c;
+}
+.footer-i .footer-redes {
+  font-size: 2.4rem;
+  color: var(--amarillo);
+  display: flex;
+  justify-content: flex-end;
+}
+.footer-i .footer-redes i {
+  padding: 0 1rem;
+  color: rgb(255, 237, 179);
+}
+.footer-i .footer-redes i:hover {
+  color: #b2ea70;
+}
+@media screen and (max-width: 450px) {
+  .footer-i .footer-redes {
+    justify-content: center;
+  }
+}
+
+.body-c {
+  background-color: rgb(255, 237, 179);
+}
+
+.main-c {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 5rem;
+}
+@media screen and (max-width: 450px) {
+  .main-c {
+    display: block;
+    margin: 0;
+  }
+}
+@media (min-width: 451px) and (max-width: 992px) {
+  .main-c {
+    display: block;
+  }
+}
+@media screen and (max-width: 450px) {
+  .main-c .margin-top-carta {
+    margin-top: 76px;
+  }
+}
+
+.border-right-carta {
+  padding-left: 1rem;
+  border-right: 1px solid hsl(343deg, 11%, 12%);
+}
+@media screen and (max-width: 992px) {
+  .border-right-carta {
+    border: 0;
+  }
+}
+
+.img-mod {
+  height: 20rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 4%;
+}
+@media screen and (max-width: 450px) {
+  .img-mod {
+    height: 14rem;
+  }
+}
+@media (min-width: 451px) and (max-width: 992px) {
+  .img-mod {
+    height: 17rem;
+  }
+}
+
+.item-title {
+  font-family: "Dancing Script", cursive;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.separador {
+  margin: 0 2rem;
+}
+
+@media screen and (max-width: 992px) {
+  .border-mid {
+    margin-top: 1rem;
+    padding-top: 2rem;
+    border-top: 1px solid hsl(343deg, 11%, 12%);
+  }
+}
+
+.border-top-carta-mod {
+  margin-top: 1rem;
+  padding-top: 2rem;
+  border-top: 1px solid hsl(343deg, 11%, 12%);
+}
+
+.border-top-carta {
+  border-top: 1px solid hsl(343deg, 11%, 12%);
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+.border-right-carta {
+  padding-left: 1rem;
+  border-right: 1px solid hsl(343deg, 11%, 12%);
+}
+@media screen and (max-width: 992px) {
+  .border-right-carta {
+    border: 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .margin-bottom-carta {
+    margin-bottom: 1rem;
+  }
+}
+
 .body-i {
   display: grid;
   background-color: rgb(255, 237, 179);
@@ -176,8 +475,17 @@ placeholder = %*/
   }
 }
 
+@media (min-width: 451px) and (max-width: 992px) {
+  .body-i-mod {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "header" "aside" "section" "main" "footer";
+  }
+}
+
 .main-i {
   grid-area: main;
+  background-color: rgb(255, 237, 179);
 }
 .main-i .gallery-intro {
   padding: 2rem 0;
@@ -191,7 +499,7 @@ placeholder = %*/
 .main-i .gallery-intro .gallery-text-c {
   display: inline-block;
   font-family: "Dancing Script", cursive;
-  font-size: 1.8rem;
+  font-size: 1;
   color: hsl(343deg, 11%, 12%);
   align-items: center;
 }
@@ -266,18 +574,13 @@ placeholder = %*/
 }
 .aside-i .aside-block .aside-intro {
   font-family: "Dancing Script", cursive;
-  font-size: 4rem;
+  font-size: 2.5rem;
   padding: 1rem;
   text-align: center;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 992px) {
   .aside-i .aside-block .aside-intro {
-    font-size: 2.7rem;
-  }
-}
-@media (min-width: 451px) and (max-width: 992px) {
-  .aside-i .aside-block .aside-intro {
-    font-size: 2.7rem;
+    font-size: 1;
   }
 }
 .aside-i .aside-block .boton-sobre {
@@ -296,6 +599,16 @@ placeholder = %*/
 @media screen and (max-width: 450px) {
   .aside-i {
     padding: 0;
+  }
+}
+
+.aside-i-mod {
+  padding: 0;
+  margin: 0.75rem 1rem 1rem 1rem;
+}
+@media screen and (max-width: 450px) {
+  .aside-i-mod {
+    margin-top: 76.03px;
   }
 }
 
