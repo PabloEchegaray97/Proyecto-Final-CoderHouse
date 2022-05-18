@@ -810,6 +810,9 @@ placeholder = %*/
   border: none;
   cursor: pointer;
 }
+.form-container .form .boton-contacto:hover {
+  color: #b2ea70;
+}
 @media screen and (max-width: 450px) {
   .form-container {
     width: auto;
@@ -875,7 +878,7 @@ placeholder = %*/
   background-color: rgb(255, 237, 179);
 }
 .main-i .gallery-intro {
-  padding: 2rem 0;
+  padding: 1rem 0;
   text-align: center;
 }
 .main-i .gallery-intro .gallery-text {
@@ -942,7 +945,7 @@ placeholder = %*/
 
 .section-i-mod {
   grid-area: section;
-  margin: 0.75rem 1rem 1rem 1rem;
+  margin: 1rem;
 }
 .section-i-mod .side-photo .side-photo-item {
   width: 94%;
@@ -981,7 +984,7 @@ placeholder = %*/
   justify-content: center;
   background-color: #1d0e1c;
   color: rgb(255, 237, 179);
-  margin-top: 1rem;
+  margin: 1rem 0;
   border-radius: 0.5rem;
   font-size: 1.5rem;
   text-decoration: none;

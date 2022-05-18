@@ -45,7 +45,7 @@
     grid-area: main;
     background-color: $bg-color-gral;
     .gallery-intro {
-        padding: 2rem 0;
+        padding: 1rem 0;
         text-align: center;
 
         .gallery-text {
@@ -121,7 +121,7 @@
 
 .section-i-mod {
     grid-area: section;
-    margin: .75rem 1rem 1rem 1rem;
+    margin: 1rem;
 
     .side-photo {
         @extend %flex;
@@ -163,7 +163,7 @@
             justify-content: center;
             background-color: $bg-color-nav-footer;
             color: $color-texto-alt;
-            margin-top: 1rem;
+            margin: 1rem 0;
             border-radius: .5rem;
             font-size: nth($font-size,3);
             text-decoration: none;
