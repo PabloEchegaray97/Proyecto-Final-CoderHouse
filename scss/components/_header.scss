@@ -68,10 +68,9 @@
     
         .slogan {
             font-size: 4rem;
-            text-shadow: 1px 1px  black;
             color: $color-texto-alt;
             @media screen and (max-width:450px) {
-                font-size: nth($font-size,5);
+                font-size: nth($font-size,3);
             }
             @media (min-width:451px) and (max-width:992px) {
                 font-size: nth($font-size,5);

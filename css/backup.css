@@ -284,7 +284,6 @@ font-family: 'Shadows Into Light', cursive;
     width: 100%;
 }
 .form {
-    display: flex;
     flex-direction: column;
     margin: 2rem 0;
 }
@@ -326,7 +325,6 @@ font-family: 'Shadows Into Light', cursive;
     cursor: pointer;
 }
 .info-add {
-    display: flex;
     flex-direction: column;
     font-family: 'Poppins', sans-serif;
     color: var(--violeta-palta);
