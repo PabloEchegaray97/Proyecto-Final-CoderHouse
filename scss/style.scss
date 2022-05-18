@@ -8,6 +8,10 @@
 ::-webkit-scrollbar {
     display: none;
 }
+.page-title {
+    visibility: hidden;
+    position: absolute;
+}
 .body-i {
     display: grid;
     background-color: $bg-color-gral;

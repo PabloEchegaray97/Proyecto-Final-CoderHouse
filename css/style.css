@@ -5,7 +5,6 @@
   box-sizing: border-box;
 }
 
-/*aca van las fuentes*/
 .header-i {
   grid-area: header;
   background-color: transparent;
@@ -897,6 +896,11 @@ placeholder = %*/
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+.page-title {
+  visibility: hidden;
+  position: absolute;
 }
 
 .body-i {
