@@ -208,11 +208,6 @@
 
 /*-----------------------*/
 /*index*/
-.page-title {
-  visibility: hidden;
-  position: absolute;
-}
-
 .main-i {
   grid-area: main;
   background-color: rgb(255, 237, 179);
