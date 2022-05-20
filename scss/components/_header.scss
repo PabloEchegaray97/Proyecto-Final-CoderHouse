@@ -1,57 +1,7 @@
-@import '../base/variables';
-@import '../base/listas';
-@import '../base/mapas';
-@import '../base/mixin';
 .header-i {
     grid-area: header;
     background-color: transparent;
-    .nav-menu {
-        position: absolute;
-        z-index: 1;
-        width: 100%;
-        background: $bg-color-nav-footer;
-        @extend %flex;
-        .logo{
-            width: 6rem;
-            margin-top: 1rem;
-            margin-left: 1rem;
-            z-index: 1;
-        @media (min-width:451px) and (max-width:992px) {
-            display: none;
-        }
-        }
-    @media screen and (max-width: 992px) {
-        display: none;
-    }
-    }
-    .font-mod {
-        font-size: 1.2rem;
-        font-family: $fuente-ppal;
-    }
-    .movil {
-    display:none;
-    background-color: $bg-color-nav-footer;
-    @media screen and (max-width:992px) {
-        display: block;    
-    }
-        .border-nav {
-            border-color:transparent !important;
-        }
-        .logo{
-            width: 6rem;
-            margin-top: 1rem;
-            margin-left: 1rem;
-            z-index: 1;
-        @media screen and (max-width: 450px) {
-            width: 2.8rem;
-            margin: 0 0 0 1rem;
-        }
-        @media (min-width:451px) and (max-width:992px) {
-            width: 3.6rem;
-            margin: 0;
-        }
-        }
-    }
+    
     .video-container {
         @extend %flex;
         .video-preview {

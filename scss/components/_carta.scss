@@ -1,8 +1,4 @@
-@import 'header.scss';
-@import 'footer.scss';
-@import '../base/variables';
-@import '../base/listas';
-@import '../base/mapas';
+/*carta*/
 .body-c {
     background-color: $bg-color-gral;
 }
@@ -31,32 +27,6 @@
     @media screen and (max-width:992px) {
         border: 0;    
     }
-}
-.img-mod {
-    height: 20rem;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 4%;
-    @media screen and (max-width:450px) {
-        height: 14rem;
-    }
-    @media (min-width:451px) and (max-width:992px) {
-        height: 17rem;
-    }
-}
-.item-title {
-    font-family: 'Dancing Script', cursive;
-    font-size: nth($font-size,6);
-    text-align: center;
-}
-.variante {
-    font-weight: 700;
-}
-.separador {
-    margin: 0 2rem;
-}
-.separador-mod {
-    margin: 0 2rem 0 0;
 }
 .border-mid {
     @media screen and (max-width:992px) {
@@ -87,3 +57,4 @@
         margin-bottom: 1rem;
     }
 }
+/*-----------------------*/

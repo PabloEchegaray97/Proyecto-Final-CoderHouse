@@ -1,11 +1,11 @@
 @import '../base/variables';
 @import '../base/listas';
 @import '../base/mapas';
-
+/*footer*/
 .footer-i {
     grid-area: footer;
     background-color: $bg-color-nav-footer;
-    @extend %flex;
+    @include flex(flex,center,center,column);
     .footer-info {
         @include flex(flex,center,center,column);
         .footer-h1 {
@@ -48,7 +48,7 @@
             margin: 0 .4rem 0 0;
         }
     }
-    .footer-redes {
+    .footer-social {
         font-size: nth($font-size,6);
         color: $color-texto-alt;
         @extend %flex;
@@ -68,3 +68,4 @@
         }
     }
 }
+/*-----------------------*/

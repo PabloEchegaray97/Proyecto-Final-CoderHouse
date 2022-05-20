@@ -1,9 +1,4 @@
-@import 'header.scss';
-@import 'footer.scss';
-@import '../base/variables';
-@import '../base/listas';
-@import '../base/mapas';
-
+/*nosotros*/
 .section-i-mod {
     grid-area: section;
     background-color: $color-texto-alt;
@@ -18,3 +13,14 @@
         }
     }
 }
+.aside-i-mod {
+    padding: 0;
+    margin: .75rem 1rem 1rem 1rem;
+    @media screen and (max-width:450px) {
+        margin: 76.03px .5rem 0 .5rem;
+    }
+    @media screen and (max-width:450px) {
+    text-align: center;
+    }
+}
+/*-----------------------*/

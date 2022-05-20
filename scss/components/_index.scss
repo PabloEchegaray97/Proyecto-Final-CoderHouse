@@ -1,0 +1,69 @@
+/*index*/
+.page-title {
+    visibility: hidden;
+    position: absolute;
+}
+.main-i {
+    grid-area: main;
+    background-color: $bg-color-gral;
+}
+
+.section-i-mod {
+    grid-area: section;
+    margin: 1rem;
+
+    .side-photo {
+        @extend %flex;
+
+        .side-photo-item {
+            width: 94%;
+            border-radius: .5rem;
+        }
+    }
+    @media screen and (max-width:450px) {
+        margin: 0 0 1rem 0;
+    }
+}
+
+.aside-i {
+    grid-area: aside;
+    font-family: $fuente-ppal;
+    @include flex(flex,center,center,column);
+    color: $color-texto;
+    padding-top: 1rem;
+
+    .aside-block {
+        width: 96%;
+
+        .aside-intro {
+            font-family: $fuente-sec;
+            font-size: nth($font-size,7);
+            padding: 1rem;
+            text-align: center;
+            @media screen and (max-width:992px) {
+                font-size: nth($font-size,6);
+                padding: 0;
+            }
+        }
+
+        .boton-sobre {
+            display: flex;
+            justify-content: center;
+            background-color: $bg-color-nav-footer;
+            color: $color-texto-alt;
+            margin: 1rem 0;
+            border-radius: .5rem;
+            font-size: nth($font-size,3);
+            text-decoration: none;
+
+            &:hover {
+                color: $color-texto-hover;
+            }
+        }
+    }
+
+    @media screen and (max-width:450px) {
+        padding: 0;
+    }
+}
+/*-----------------------*/

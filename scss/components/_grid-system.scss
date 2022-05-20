@@ -1,0 +1,34 @@
+ /*grid-system general*/
+.body-i {
+    display: grid;
+    background-color: $bg-color-gral;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "header header header header"
+                         "section section aside aside"
+                         "main main main main"
+                         "footer footer footer footer";
+
+    @media screen and (max-width:450px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas: "header"
+            "aside"
+            "section"
+            "main"
+            "footer";
+    }
+}
+/*grid-system -pertenece a la seccion 'nosotros'-*/
+.body-i-mod {
+    @media (min-width:451px) and (max-width:992px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas: "header"
+                             "aside"
+                             "section"
+                             "main"
+                             "footer";
+    }
+}
+/*-----------------------*/

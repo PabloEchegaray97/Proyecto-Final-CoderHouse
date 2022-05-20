@@ -1,0 +1,35 @@
+/*cards - tarjetas para productos*/
+.card-container {
+    .img-mod {
+        height: 20rem;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 4%;
+        @media screen and (max-width:450px) {
+            height: 14rem;
+        }
+        @media (min-width:451px) and (max-width:992px) {
+            height: 17rem;
+        }
+    }
+    .item-title {
+        font-family: 'Dancing Script', cursive;
+        font-size: nth($font-size,6);
+        text-align: center;
+    }
+    /*
+    .card-description {
+        estilos para descripcion de productos
+    }
+    */
+    .space {
+        margin: 0 2rem;
+    }
+    .space-mod {
+        margin: 0 2rem 0 0;
+    }
+    .types {
+        font-weight: 700;
+    }
+}
+/*-----------------------*/

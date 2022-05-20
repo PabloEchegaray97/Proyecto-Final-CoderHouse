@@ -1,0 +1,29 @@
+/*info-add*/
+.info-add {
+    flex-direction: column;
+    font-family: $fuente-ppal;
+    color: $color-texto;
+    text-align: center;
+    .mas-info {
+        font-size: nth($font-size,3);
+        @media screen and (max-width:992px) {
+        font-size: nth($font-size,2);
+        }
+    }
+    .icon-container {
+        @include flex (flex,center,center,column);
+        margin: .7rem;
+        .info-icon {
+            font-size: nth($font-size,8);
+        }
+        .info-text {
+            font-weight: 700;
+        }
+    }
+    @media screen and (max-width:450px) {
+        display: block;
+        text-align: center;
+        
+    }
+}
+/*-----------------------*/
