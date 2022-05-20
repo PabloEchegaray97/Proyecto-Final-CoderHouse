@@ -7,15 +7,38 @@
 ::-webkit-scrollbar {
   display: none; }
 
-/*paquete de propiedades para utilizar en cualquier parte del directorio 
-placeholder = %*/
 .nav-menu, .header-i .video-container, .header-i .top-d .top-text, .section-i-mod .side-photo, .footer-i .footer-social {
   display: flex;
   justify-content: center;
   align-items: center; }
 
-/*se importa como 
-@extend %flex; */
+/*grid-system general*/
+.body-i {
+  display: grid;
+  background-color: #ffedb3;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "header header header header" "section section aside aside" "main main main main" "footer footer footer footer"; }
+  @media screen and (max-width: 450px) {
+    .body-i {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto auto auto;
+      grid-template-areas: "header" "aside" "section" "main" "footer"; } }
+
+/*grid-system -pertenece a la seccion 'nosotros'-*/
+@media (min-width: 451px) and (max-width: 992px) {
+  .body-i-mod {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "header" "aside" "section" "main" "footer"; } }
+
+/*-----------------------*/
+/*titulo - SEO pertenece a los 5 html*/
+.page-title {
+  visibility: hidden;
+  position: absolute; }
+
+/*-----------------------*/
 /*navbar*/
 .nav-menu {
   position: absolute;
@@ -61,27 +84,7 @@ placeholder = %*/
         margin: 0; } }
 
 /*-----------------------*/
-/*grid-system general*/
-.body-i {
-  display: grid;
-  background-color: #ffedb3;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto auto;
-  grid-template-areas: "header header header header" "section section aside aside" "main main main main" "footer footer footer footer"; }
-  @media screen and (max-width: 450px) {
-    .body-i {
-      grid-template-columns: 1fr;
-      grid-template-rows: auto auto auto auto auto;
-      grid-template-areas: "header" "aside" "section" "main" "footer"; } }
-
-/*grid-system -pertenece a la seccion 'nosotros'-*/
-@media (min-width: 451px) and (max-width: 992px) {
-  .body-i-mod {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto auto;
-    grid-template-areas: "header" "aside" "section" "main" "footer"; } }
-
-/*-----------------------*/
+/*header*/
 .header-i {
   grid-area: header;
   background-color: transparent;
@@ -153,6 +156,7 @@ placeholder = %*/
         position: absolute;
         font-size: 1.1rem; } }
 
+/*-----------------------*/
 /*index*/
 .page-title {
   visibility: hidden;
@@ -322,36 +326,34 @@ placeholder = %*/
 
 /*-----------------------*/
 /*cards - tarjetas para productos*/
-.card-container {
-  /*
-    .card-description {
-        estilos para descripcion de productos
-    }
-    */ }
-  .card-container .img-mod {
-    height: 20rem;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 4%; }
-    @media screen and (max-width: 450px) {
-      .card-container .img-mod {
-        height: 14rem; } }
-    @media (min-width: 451px) and (max-width: 992px) {
-      .card-container .img-mod {
-        height: 17rem; } }
-  .card-container .item-title {
-    font-family: 'Dancing Script', cursive;
-    font-size: 2.5rem;
-    text-align: center; }
-  .card-container .space {
-    margin: 0 2rem; }
-  .card-container .space-mod {
-    margin: 0 2rem 0 0; }
-  .card-container .types {
-    font-weight: 700; }
+.card-container .img-mod {
+  height: 20rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 4%; }
+  @media screen and (max-width: 450px) {
+    .card-container .img-mod {
+      height: 14rem; } }
+  @media (min-width: 451px) and (max-width: 992px) {
+    .card-container .img-mod {
+      height: 17rem; } }
+
+.card-container .item-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5rem;
+  text-align: center; }
+
+.card-container .space {
+  margin: 0 2rem; }
+
+.card-container .space-mod {
+  margin: 0 2rem 0 0; }
+
+.card-container .types {
+  font-weight: 700; }
 
 /*-----------------------*/
-/*info-add*/
+/*info-add (reservas - contacto)*/
 .info-add {
   flex-direction: column;
   font-family: "Poppins", sans-serif;

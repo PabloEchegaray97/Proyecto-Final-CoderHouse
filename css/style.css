@@ -9,16 +9,45 @@
   display: none;
 }
 
-/*paquete de propiedades para utilizar en cualquier parte del directorio 
-placeholder = %*/
 .footer-i .footer-social, .section-i-mod .side-photo, .header-i .top-d .top-text, .header-i .video-container, .nav-menu {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/*se importa como 
-@extend %flex; */
+/*grid-system general*/
+.body-i {
+  display: grid;
+  background-color: rgb(255, 237, 179);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "header header header header" "section section aside aside" "main main main main" "footer footer footer footer";
+}
+@media screen and (max-width: 450px) {
+  .body-i {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "header" "aside" "section" "main" "footer";
+  }
+}
+
+/*grid-system -pertenece a la seccion 'nosotros'-*/
+@media (min-width: 451px) and (max-width: 992px) {
+  .body-i-mod {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "header" "aside" "section" "main" "footer";
+  }
+}
+
+/*-----------------------*/
+/*titulo - SEO pertenece a los 5 html*/
+.page-title {
+  visibility: hidden;
+  position: absolute;
+}
+
+/*-----------------------*/
 /*navbar*/
 .nav-menu {
   position: absolute;
@@ -80,32 +109,7 @@ placeholder = %*/
 }
 
 /*-----------------------*/
-/*grid-system general*/
-.body-i {
-  display: grid;
-  background-color: rgb(255, 237, 179);
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto auto;
-  grid-template-areas: "header header header header" "section section aside aside" "main main main main" "footer footer footer footer";
-}
-@media screen and (max-width: 450px) {
-  .body-i {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto auto;
-    grid-template-areas: "header" "aside" "section" "main" "footer";
-  }
-}
-
-/*grid-system -pertenece a la seccion 'nosotros'-*/
-@media (min-width: 451px) and (max-width: 992px) {
-  .body-i-mod {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto auto;
-    grid-template-areas: "header" "aside" "section" "main" "footer";
-  }
-}
-
-/*-----------------------*/
+/*header*/
 .header-i {
   grid-area: header;
   background-color: transparent;
@@ -202,6 +206,7 @@ placeholder = %*/
   }
 }
 
+/*-----------------------*/
 /*index*/
 .page-title {
   visibility: hidden;
@@ -421,13 +426,6 @@ placeholder = %*/
 
 /*-----------------------*/
 /*cards - tarjetas para productos*/
-.card-container {
-  /*
-  .card-description {
-      estilos para descripcion de productos
-  }
-  */
-}
 .card-container .img-mod {
   height: 20rem;
   width: 100%;
@@ -460,7 +458,7 @@ placeholder = %*/
 }
 
 /*-----------------------*/
-/*info-add*/
+/*info-add (reservas - contacto)*/
 .info-add {
   flex-direction: column;
   font-family: "Poppins", sans-serif;
