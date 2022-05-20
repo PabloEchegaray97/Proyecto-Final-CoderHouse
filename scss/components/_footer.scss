@@ -1,71 +1,50 @@
-@import '../base/variables';
-@import '../base/listas';
-@import '../base/mapas';
+
 /*footer*/
 .footer-i {
     grid-area: footer;
     background-color: $bg-color-nav-footer;
-    @include flex(flex,center,center,column);
-    .footer-info {
-        @include flex(flex,center,center,column);
-        .footer-h1 {
-            font-size: nth($font-size, 3 );
-            color: $color-texto-alt;
+    @include flex(flex,space-around,flex-start,row);
+    font-family: $fuente-ppal;
+    padding: 0 10rem;
+    .footer-des {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        color: $color-texto-alt;
+        margin: 1rem 0 0 1rem;
+        .font-mod {
             font-family: $fuente-sec;
+            font-size: 1.4rem;
         }
-        .footer-text {
-            color: $color-texto-alt;
-            font-family: $fuente-ppal;
-            font-size: .9rem;
-            margin: 0;
-            font-weight: 400;
-        }
-        .footer-text--mod {
+        .footer-text { 
             font-size: .8rem;
         }
-        .margin-footer {
-            margin: .5rem 0 .2rem 0;
-
-        }
     }
-    .footer-links {
-        @include flex(flex,start,start,row);
-        margin:0;
-        padding: 0;
-        a {
-            text-decoration: none;
-        }
-        li {
-            list-style-type: none;
-        }
-        .footer-links__item {
-            margin: .5rem;
-            &:hover {
-                color: $color-texto-hover;
-            }
-        }
-        .footer-links__item--mod {
-            margin: 0 .4rem 0 0;
-        }
-    }
-    .footer-social {
-        font-size: nth($font-size,6);
+    .footer-section {
         color: $color-texto-alt;
-        @extend %flex;
-
-        .footer-icons {
-            color: $color-texto-alt;
-            &:hover {
-                color: $color-texto-hover;
+        margin: 1rem 0;
+        .footer-title {
+            font-size: 1rem;
+        }
+        ul {
+            list-style-type: none;
+            font-size: .9rem;
+            li {
+                display: flex;
+                align-items: center;
+                font-size: .9rem;
+            }
+            .footer-icon {
+                font-size: 1.8rem;
             }
         }
-        .footer-icons--mod {
-            margin: 0 1rem;
-        }
-
-        @media screen and (max-width:450px) {
-            justify-content: center;
-        }
+        
+        
     }
+    .footer-section-mod {
+        margin-right: 1rem;
+    }
+    
+    
 }
 /*-----------------------*/
