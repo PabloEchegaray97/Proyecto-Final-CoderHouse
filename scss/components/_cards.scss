@@ -12,10 +12,27 @@
             height: 17rem;
         }
     }
+    .img-mod2 {
+        border-radius: 1%;
+        margin: 1rem;
+        @media screen and (max-width:450px) {
+        margin-top: calc(1rem + 56px);
+        }
+
+    }
     .item-title {
         font-family: 'Dancing Script', cursive;
         font-size: nth($font-size,6);
         text-align: center;
+    }
+    .item-title-mod {
+        font-size: 4rem;
+        @media screen and (max-width:450px) {
+        font-size: 3rem;
+        }
+    }
+    .padding-p {
+        margin: 1.5rem;
     }
     .space {
         margin: 0 2rem;

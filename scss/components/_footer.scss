@@ -3,21 +3,28 @@
 .footer-i {
     grid-area: footer;
     background-color: $bg-color-nav-footer;
-    @include flex(flex,space-around,flex-start,row);
+    @include flex(flex,center,flex-start,row);
     font-family: $fuente-ppal;
-    padding: 0 10rem;
+    padding: 0 8rem;
     .footer-des {
         display: flex;
-        align-items: center;
         flex-direction: column;
+        align-items: center;
         color: $color-texto-alt;
-        margin: 1rem 0 0 1rem;
+        margin: 1rem 2rem 0 0;
         .font-mod {
             font-family: $fuente-sec;
-            font-size: 1.4rem;
+            font-size: 2rem;
         }
         .footer-text { 
             font-size: .8rem;
+            display: inline-block;
+            text-align: center;
+            
+        }
+        @media screen and (max-width:756px) {
+        margin: 0;
+        
         }
     }
     .footer-section {
@@ -29,22 +36,55 @@
         ul {
             list-style-type: none;
             font-size: .9rem;
-            li {
+            a {
                 display: flex;
                 align-items: center;
                 font-size: .9rem;
+                color: $color-texto-alt;
+                text-decoration: none;
+                cursor: pointer;
+                &:hover {
+                    color: $color-texto-hover;
+                }
+            }
+            @media screen and (max-width:756px) {
+                margin: 0;
+                padding: 0;
             }
             .footer-icon {
-                font-size: 1.8rem;
+                font-size: 2rem;
+                &:hover {
+                    color: $color-texto-hover;
+                }
+            }
+            span {
+                @media screen and (max-width:756px) {
+                    display: none;
+                }
+            }
+        }
+        @media screen and (max-width:756px) {
+            margin: .5rem 0;
+        }
+        .footer-icons {
+            @media screen and (max-width:756px) {
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+        .footer-links {
+            @media screen and (max-width:756px) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
         }
         
-        
     }
-    .footer-section-mod {
-        margin-right: 1rem;
+    @media screen and (max-width:756px) {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
     }
-    
-    
 }
 /*-----------------------*/
