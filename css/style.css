@@ -158,7 +158,7 @@
   flex-direction: column;
 }
 .header-i .top-d .parallax {
-  background-image: url("https://i.ibb.co/hZYQPNg/o-mendiola-O5-D41-JB-w-H4-unsplash-1-2.webp");
+  background-image: url("https://i.ibb.co/Jtbv8Kf/image-1.webp");
   /* Set a specific height */
   min-height: 280px;
   /* Create the parallax scrolling effect */
@@ -227,26 +227,23 @@
   background-color: rgb(255, 237, 179);
 }
 .main-i .car-mod {
-  width: 50%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-@media (min-width: 451px) and (max-width: 992px) {
-  .main-i .car-mod {
-    width: 80%;
-  }
-}
-@media screen and (max-width: 450px) {
-  .main-i .car-mod {
-    width: 90%;
-  }
+  border-radius: 0.5rem;
 }
 .main-i .img-mod {
-  height: 22rem;
+  height: 100%;
   width: 100%;
   object-fit: cover;
   border-radius: 0.5rem;
+  transition: transform 0.8s ease;
+  position: relative;
+}
+.main-i .img-mod:hover {
+  transform: scale(1.1);
+  transition: transform 0.8s ease;
 }
 
 .parallax {
@@ -276,6 +273,11 @@
   background-size: cover;
 }
 
+.parallax2-mod {
+  min-height: 14rem;
+  background-image: url("https://i.ibb.co/Y0pxH5h/lyn-giberson-Okhc-Mbf3v-Q0-unsplash-2.webp");
+}
+
 .section-i-mod {
   grid-area: section;
   margin: 1rem;
@@ -299,26 +301,30 @@
   display: block;
   color: hsl(343deg, 11%, 12%);
 }
-.aside-i .p-abs {
+
+.p-abs {
   position: absolute;
   width: 100vw;
   object-fit: cover;
   height: 1.2rem;
   align-self: flex-end;
 }
-.aside-i .mod-2 {
+
+.mod-2 {
   bottom: 0;
 }
-.aside-i .aside-block {
+
+.aside-block {
   position: absolute;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.26);
 }
-.aside-i .aside-block .aside-text {
+.aside-block .aside-text {
   color: rgb(255, 237, 179);
   margin: 1rem;
 }
-.aside-i .aside-intro {
+
+.aside-intro {
   font-family: "Dancing Script", cursive;
   font-size: 3rem;
   color: rgb(255, 237, 179);
@@ -326,15 +332,18 @@
   text-align: center;
 }
 @media screen and (max-width: 992px) {
-  .aside-i .aside-intro {
+  .aside-intro {
     font-size: 2.5rem;
     padding: 0;
   }
 }
-@media screen and (max-width: 450px) {
-  .aside-i {
-    padding: 0;
-  }
+
+.article .img-mod3 {
+  width: 12rem;
+  border-radius: 50%;
+}
+.article .m-top {
+  margin-top: 1rem;
 }
 
 /*-----------------------*/
@@ -349,6 +358,71 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.parallax3 a {
+  width: 100%;
+}
+
+.bg-car {
+  height: 100%;
+}
+
+.car-mod {
+  height: 100%;
+}
+
+.carousel-item {
+  height: 100% !important;
+}
+
+.container2 {
+  width: 50%;
+  height: 400px;
+  margin: 1rem auto;
+  position: relative;
+  overflow: hidden;
+}
+@media screen and (max-width: 600px) {
+  .container2 {
+    width: 90%;
+  }
+}
+
+.container2:hover .overlay {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.overlay {
+  position: absolute;
+  background-color: rgba(59, 245, 115, 0.356);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transform: scale(1.3);
+  opacity: 0;
+  transition: transform 0.4s ease 0s;
+}
+
+.overlay span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 2rem;
+  color: rgb(255, 237, 179);
+}
+
+.container2 img {
+  transition: transform 0.8s ease;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.container2:hover img {
+  transform: scale(1.1);
 }
 
 .gallery-intro {

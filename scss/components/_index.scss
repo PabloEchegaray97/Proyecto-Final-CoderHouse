@@ -4,22 +4,24 @@
     grid-area: main;
     background-color: $bg-color-gral;
     .car-mod {
-        width: 50%;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        @media (min-width:451px) and (max-width:992px) {
-            width: 80%;
-        }
-        @media screen and (max-width:450px) {
-            width: 90%;
-        }
+        border-radius: .5rem;
     }
     .img-mod {
-        height: 22rem;
+        height: 100%;
         width: 100%;
         object-fit: cover;
         border-radius: .5rem;
+        transition: transform .8s ease;
+        position: relative;
+        &:hover {
+            
+                transform: scale(1.1);
+                transition: transform .8s ease;
+        }
     }
     
 }
@@ -55,6 +57,10 @@
     background-size: cover;
 
 }
+.parallax2-mod {
+    min-height: 14rem;
+    background-image: url("https://i.ibb.co/Y0pxH5h/lyn-giberson-Okhc-Mbf3v-Q0-unsplash-2.webp");
+}
 
 .section-i-mod {
     grid-area: section;
@@ -81,41 +87,46 @@
     font-family: $fuente-ppal;
     display: block;
     color: $color-texto;
-    .p-abs {
-        position: absolute;
-        width: 100vw;
-        object-fit: cover;
-        height: 1.2rem;
-        align-self: flex-end;
+}
+.p-abs {
+    position: absolute;
+    width: 100vw;
+    object-fit: cover;
+    height: 1.2rem;
+    align-self: flex-end;
     }
-    .mod-2 {
-        bottom: 0;
+.mod-2 {
+    bottom: 0;
     }
-    .aside-block {
-        position: absolute;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.26);
-        .aside-text {
-            color: $color-texto-alt;
-            margin: 1rem;
-        }
-    }
-    .aside-intro {
-        font-family: $fuente-sec;
-        font-size: nth($font-size,7);
+.aside-block {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.26);
+    .aside-text {
         color: $color-texto-alt;
-        padding: 1rem;
-        text-align: center;
-        
-        @media screen and (max-width:992px) {
-            font-size: nth($font-size,6);
-            padding: 0;
-        }
-    
+        margin: 1rem;
     }
-
-    @media screen and (max-width:450px) {
+}
+.aside-intro {
+    font-family: $fuente-sec;
+    font-size: nth($font-size,7);
+    color: $color-texto-alt;
+    padding: 1rem;
+    text-align: center; 
+    @media screen and (max-width:992px) {
+        font-size: nth($font-size,6);
         padding: 0;
     }
+}
+
+.article {
+    .img-mod3 {
+        width: 12rem;
+        border-radius: 50%;
+    }
+    .m-top {
+        margin-top: 1rem;
+    }
+    
 }
 /*-----------------------*/
