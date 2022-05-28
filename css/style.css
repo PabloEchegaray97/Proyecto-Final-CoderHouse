@@ -75,6 +75,10 @@
 .font-mod {
   font-size: 1.2rem;
   font-family: "Poppins", sans-serif;
+  color: rgb(255, 237, 179) !important;
+}
+.font-mod:hover {
+  color: #b2ea70 !important;
 }
 
 .movil {

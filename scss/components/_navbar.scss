@@ -21,6 +21,10 @@
 .font-mod {
     font-size: 1.2rem;
     font-family: $fuente-ppal;
+    color: $color-texto-alt !important;
+    &:hover {
+        color: $color-texto-hover !important;
+    }
 }
 .movil {
 display:none;
