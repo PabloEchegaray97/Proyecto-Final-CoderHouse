@@ -5,7 +5,9 @@
     background-color: $bg-color-gral;
     .car-mod {
         width: 50%;
-        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         @media (min-width:451px) and (max-width:992px) {
             width: 80%;
         }
@@ -18,7 +20,6 @@
         width: 100%;
         object-fit: cover;
         border-radius: .5rem;
-        margin-bottom: 1rem;
     }
     
 }
@@ -39,6 +40,7 @@
     background-size: cover;
   }
 .parallax2 {
+    
     @extend %flex;
     background-image: url("https://i.ibb.co/VW6p6Gj/bergqvist-TYj7ey6xn9-M-unsplash-1-1.webp");
   
@@ -74,6 +76,7 @@
 }
 
 .aside-i {
+    padding-top: 1rem;
     grid-area: aside;
     font-family: $fuente-ppal;
     display: block;
