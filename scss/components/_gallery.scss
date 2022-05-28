@@ -1,4 +1,19 @@
 /*galeria*/
+.parallax3 {
+    @extend %flex;
+    background-image: url("https://i.ibb.co/rxRSVzp/estudio-bloom-NYq-CYYqyml-M-unsplash.jpg");
+  
+    /* Set a specific height */
+    min-height: 30rem;
+    width: 100%;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .gallery-intro {
     padding: 1rem 0;
     text-align: center;
@@ -7,6 +22,7 @@
         font-family: $fuente-ppal;
         font-size: nth($font-size,3);
         color: $color-texto;
+        margin-top: 1rem;
     }
 
     .gallery-text-c {

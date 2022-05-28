@@ -9,7 +9,7 @@
   display: none;
 }
 
-.section-i-mod .side-photo, .header-i .top-d .top-text, .header-i .video-container, .nav-menu {
+.main-n .text-container, .main-n .img-container, .parallax3, .section-i-mod .side-photo, .parallax2, .header-i .top-d .top-text, .header-i .video-container, .nav-menu {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,7 +21,7 @@
   background-color: rgb(255, 237, 179);
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto auto auto auto;
-  grid-template-areas: "header header header header" "section section aside aside" "main main main main" "footer footer footer footer";
+  grid-template-areas: "header header header header" "aside aside aside aside" "main main main main" "footer footer footer footer";
 }
 @media screen and (max-width: 450px) {
   .body-i {
@@ -36,7 +36,7 @@
   .body-i-mod {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto auto;
-    grid-template-areas: "header" "aside" "section" "main" "footer";
+    grid-template-areas: "header" "section" "aside" "main" "footer";
   }
 }
 
@@ -153,6 +153,16 @@
   align-items: center;
   flex-direction: column;
 }
+.header-i .top-d .parallax {
+  background-image: url("https://i.ibb.co/hZYQPNg/o-mendiola-O5-D41-JB-w-H4-unsplash-1-2.webp");
+  /* Set a specific height */
+  min-height: 280px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .header-i .top-d .top-i {
   width: 100%;
 }
@@ -212,6 +222,54 @@
   grid-area: main;
   background-color: rgb(255, 237, 179);
 }
+.main-i .car-mod {
+  width: 50%;
+  margin: 0 auto;
+}
+@media (min-width: 451px) and (max-width: 992px) {
+  .main-i .car-mod {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .main-i .car-mod {
+    width: 90%;
+  }
+}
+.main-i .img-mod {
+  height: 22rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("https://i.ibb.co/7vdsq6m/ck-schneider-5xlt-WMpk-N3-E-unsplash-3.webp");
+  /*https://i.ibb.co/j3h37wt/ck-schneider-5xlt-WMpk-N3-E-unsplash-2.webp*/
+  /*https://i.ibb.co/7vdsq6m/ck-schneider-5xlt-WMpk-N3-E-unsplash-3.webp*/
+  /*https://i.ibb.co/xgDsHRB/top2.jpg*/
+  /* Set a specific height */
+  min-height: 300px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax2 {
+  background-image: url("https://i.ibb.co/VW6p6Gj/bergqvist-TYj7ey6xn9-M-unsplash-1-1.webp");
+  /* Set a specific height */
+  min-height: 30rem;
+  width: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .section-i-mod {
   grid-area: section;
@@ -219,6 +277,8 @@
 }
 .section-i-mod .side-photo .side-photo-item {
   width: 94%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 0.5rem;
 }
 @media screen and (max-width: 450px) {
@@ -230,40 +290,40 @@
 .aside-i {
   grid-area: aside;
   font-family: "Poppins", sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  display: block;
   color: hsl(343deg, 11%, 12%);
-  padding-top: 1rem;
+}
+.aside-i .p-abs {
+  position: absolute;
+  width: 100vw;
+  object-fit: cover;
+  height: 1.2rem;
+  align-self: flex-end;
+}
+.aside-i .mod-2 {
+  bottom: 0;
 }
 .aside-i .aside-block {
-  width: 96%;
+  position: absolute;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.26);
 }
-.aside-i .aside-block .aside-intro {
+.aside-i .aside-block .aside-text {
+  color: rgb(255, 237, 179);
+  margin: 1rem;
+}
+.aside-i .aside-intro {
   font-family: "Dancing Script", cursive;
   font-size: 3rem;
+  color: rgb(255, 237, 179);
   padding: 1rem;
   text-align: center;
 }
 @media screen and (max-width: 992px) {
-  .aside-i .aside-block .aside-intro {
+  .aside-i .aside-intro {
     font-size: 2.5rem;
     padding: 0;
   }
-}
-.aside-i .aside-block .boton-sobre {
-  display: flex;
-  justify-content: center;
-  background-color: #1d0e1c;
-  color: rgb(255, 237, 179);
-  margin: 1rem 0;
-  border-radius: 0.5rem;
-  font-size: 1.5rem;
-  text-decoration: none;
-}
-.aside-i .aside-block .boton-sobre:hover {
-  color: #b2ea70;
 }
 @media screen and (max-width: 450px) {
   .aside-i {
@@ -273,6 +333,18 @@
 
 /*-----------------------*/
 /*galeria*/
+.parallax3 {
+  background-image: url("https://i.ibb.co/rxRSVzp/estudio-bloom-NYq-CYYqyml-M-unsplash.jpg");
+  /* Set a specific height */
+  min-height: 30rem;
+  width: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .gallery-intro {
   padding: 1rem 0;
   text-align: center;
@@ -281,6 +353,7 @@
   font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
   color: hsl(343deg, 11%, 12%);
+  margin-top: 1rem;
 }
 .gallery-intro .gallery-text-c {
   display: inline-block;
@@ -322,6 +395,7 @@
   text-align: center;
   font-family: "Poppins", sans-serif;
   color: hsl(343deg, 11%, 12%);
+  margin-top: 1rem;
 }
 .map .map-icon {
   font-size: 2rem;
@@ -478,6 +552,31 @@
 }
 
 /*-----------------------*/
+.main-n {
+  margin: 1rem;
+}
+.main-n .img-container .img-nos {
+  height: 27rem;
+  overflow-x: hidden;
+  object-fit: cover;
+  border-radius: 2%;
+}
+.main-n .img-container .img-nos--mod {
+  width: 50%;
+  border-radius: 4%;
+}
+.main-n .text-container {
+  flex-direction: column;
+}
+.main-n .text-container .title {
+  font-family: "Dancing Script", cursive;
+  font-size: 4rem;
+  text-align: center;
+}
+.main-n .text-container--mod {
+  margin-top: 1rem;
+}
+
 /*info-add (reservas - contacto)*/
 .info-add {
   flex-direction: column;

@@ -3,6 +3,55 @@
 .main-i {
     grid-area: main;
     background-color: $bg-color-gral;
+    .car-mod {
+        width: 50%;
+        margin: 0 auto;
+        @media (min-width:451px) and (max-width:992px) {
+            width: 80%;
+        }
+        @media screen and (max-width:450px) {
+            width: 90%;
+        }
+    }
+    .img-mod {
+        height: 22rem;
+        width: 100%;
+        object-fit: cover;
+        border-radius: .5rem;
+        margin-bottom: 1rem;
+    }
+    
+}
+.parallax {
+    /* The image used */
+    background-image: url("https://i.ibb.co/7vdsq6m/ck-schneider-5xlt-WMpk-N3-E-unsplash-3.webp");
+    /*https://i.ibb.co/j3h37wt/ck-schneider-5xlt-WMpk-N3-E-unsplash-2.webp*/
+    /*https://i.ibb.co/7vdsq6m/ck-schneider-5xlt-WMpk-N3-E-unsplash-3.webp*/
+    /*https://i.ibb.co/xgDsHRB/top2.jpg*/
+  
+    /* Set a specific height */
+    min-height: 300px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.parallax2 {
+    @extend %flex;
+    background-image: url("https://i.ibb.co/VW6p6Gj/bergqvist-TYj7ey6xn9-M-unsplash-1-1.webp");
+  
+    /* Set a specific height */
+    min-height: 30rem;
+    width: 100%;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 .section-i-mod {
@@ -14,6 +63,8 @@
 
         .side-photo-item {
             width: 94%;
+            height: 100%;
+            object-fit: cover;
             border-radius: .5rem;
         }
     }
@@ -25,38 +76,39 @@
 .aside-i {
     grid-area: aside;
     font-family: $fuente-ppal;
-    @include flex(flex,center,center,column);
+    display: block;
     color: $color-texto;
-    padding-top: 1rem;
-
+    .p-abs {
+        position: absolute;
+        width: 100vw;
+        object-fit: cover;
+        height: 1.2rem;
+        align-self: flex-end;
+    }
+    .mod-2 {
+        bottom: 0;
+    }
     .aside-block {
-        width: 96%;
-
-        .aside-intro {
-            font-family: $fuente-sec;
-            font-size: nth($font-size,7);
-            padding: 1rem;
-            text-align: center;
-            @media screen and (max-width:992px) {
-                font-size: nth($font-size,6);
-                padding: 0;
-            }
-        }
-
-        .boton-sobre {
-            display: flex;
-            justify-content: center;
-            background-color: $bg-color-nav-footer;
+        position: absolute;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.26);
+        .aside-text {
             color: $color-texto-alt;
-            margin: 1rem 0;
-            border-radius: .5rem;
-            font-size: nth($font-size,3);
-            text-decoration: none;
-
-            &:hover {
-                color: $color-texto-hover;
-            }
+            margin: 1rem;
         }
+    }
+    .aside-intro {
+        font-family: $fuente-sec;
+        font-size: nth($font-size,7);
+        color: $color-texto-alt;
+        padding: 1rem;
+        text-align: center;
+        
+        @media screen and (max-width:992px) {
+            font-size: nth($font-size,6);
+            padding: 0;
+        }
+    
     }
 
     @media screen and (max-width:450px) {

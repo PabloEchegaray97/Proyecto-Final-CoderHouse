@@ -37,6 +37,16 @@
     /*header para paginas alternativas*/
     .top-d {
         @include flex(flex,center,center,column);
+        .parallax {
+            background-image: url("https://i.ibb.co/hZYQPNg/o-mendiola-O5-D41-JB-w-H4-unsplash-1-2.webp");
+            /* Set a specific height */
+            min-height: 280px;
+            /* Create the parallax scrolling effect */
+            background-attachment:fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size:cover;
+        }
         .top-i {
             width: 100%;
             .top-img {
