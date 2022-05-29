@@ -15,6 +15,9 @@
     a {
         width: 100%;
     }
+    @media screen and (max-width:992px){
+        background-attachment:unset;
+    }
 }
 .bg-car {
     height: 100%;

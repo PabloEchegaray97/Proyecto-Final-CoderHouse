@@ -40,6 +40,9 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    @media screen and (max-width:992px){
+        background-attachment:unset;
+    }
   }
 .parallax2 {
     
@@ -55,6 +58,9 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    @media screen and (max-width:992px){
+        background-attachment:unset;
+    }
 
 }
 .parallax2-mod {

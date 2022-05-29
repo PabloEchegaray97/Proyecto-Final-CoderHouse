@@ -167,6 +167,11 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media screen and (max-width: 992px) {
+  .header-i .top-d .parallax {
+    background-attachment: unset;
+  }
+}
 .header-i .top-d .top-i {
   width: 100%;
 }
@@ -260,6 +265,11 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media screen and (max-width: 992px) {
+  .parallax {
+    background-attachment: unset;
+  }
+}
 
 .parallax2 {
   background-image: url("https://i.ibb.co/VW6p6Gj/bergqvist-TYj7ey6xn9-M-unsplash-1-1.webp");
@@ -271,6 +281,11 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media screen and (max-width: 992px) {
+  .parallax2 {
+    background-attachment: unset;
+  }
 }
 
 .parallax2-mod {
@@ -361,6 +376,11 @@
 }
 .parallax3 a {
   width: 100%;
+}
+@media screen and (max-width: 992px) {
+  .parallax3 {
+    background-attachment: unset;
+  }
 }
 
 .bg-car {
