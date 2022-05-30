@@ -1,20 +1,11 @@
 /*carta*/
 .body-c {
     background-color: $bg-color-gral;
+    @include flex(flex,space-between,stretch,column);
 }
 .main-c {
-    // display: flex;
-    // justify-content: space-between;
-    // align-items: center;
     @include flex(flex,space-between,center,row);
     margin: 1rem 5rem;
-    @media screen and (max-width:450px) {
-        display: block;
-        margin: 0;   
-    }
-    @media (min-width:451px) and (max-width:992px) {
-        display: block; 
-    }
     .margin-top-carta {
         @media screen and (max-width:450px) {
         margin-top: 76px;
@@ -24,6 +15,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    @media screen and (max-width:450px) {
+        display: block;
+        margin: 0;   
+    }
+    @media (min-width:451px) and (max-width:992px) {
+        display: block; 
     }
 }
 .border-right-carta {

@@ -43,25 +43,6 @@
     background-image: url("https://i.ibb.co/9N4m1bG/reservas2.webp");
 }
 
-.section-i-mod {
-    grid-area: section;
-    margin: 1rem;
-
-    .side-photo {
-        @extend %flex;
-
-        .side-photo-item {
-            width: 94%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: .5rem;
-        }
-    }
-    @media screen and (max-width:450px) {
-        margin: 0 0 1rem 0;
-    }
-}
-
 .aside-i {
     grid-area: aside;
     font-family: $fuente-ppal;
@@ -89,8 +70,7 @@
     }
 }
 
-.article {
-    display: block;
+.section {
     .art-img-mod {
         width: 12rem;
         border-radius: 50%;
@@ -99,10 +79,5 @@
         margin-top: 1rem;
     }
 }
-.indicador {
-    width: 10px;
-    height: 10px;
-    align-self: flex-end;
-    margin-bottom: 3.2rem;
-}
+
 /*-----------------------*/

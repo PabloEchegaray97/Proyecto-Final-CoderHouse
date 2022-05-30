@@ -9,20 +9,20 @@
   display: none;
 }
 
-.main-n .text-container, .main-n .img-container, .parallax3, .section-i-mod .side-photo, .parallax2, .header-i .top-d .top-text, .header-i .video-container, .nav-menu {
+.gallery, .parallax2, .header-i .top-d .top-text, .header-i .video-container, .nav-menu {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.parallax2, .parallax {
+.gallery, .parallax2, .parallax, .header-i .top-d .parallax {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 @media screen and (max-width: 992px) {
-  .parallax2, .parallax {
+  .gallery, .parallax2, .parallax, .header-i .top-d .parallax {
     background-attachment: unset;
   }
 }
@@ -171,21 +171,11 @@
 }
 .header-i .top-d .parallax {
   background-image: url("https://i.ibb.co/Jtbv8Kf/image-1.webp");
-  /* Set a specific height */
   min-height: 280px;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-@media screen and (max-width: 992px) {
-  .header-i .top-d .parallax {
-    background-attachment: unset;
-  }
 }
 .header-i .top-d .parallax-mod {
-  background-image: url("https://i.ibb.co/8BxJ7ws/reservas.webp");
+  background-image: url("https://i.ibb.co/16kg3FR/image.webp");
+  /*https://i.ibb.co/gRxgMyV/image-2.webp*/
 }
 .header-i .top-d .top-i {
   width: 100%;
@@ -285,22 +275,6 @@
   background-image: url("https://i.ibb.co/9N4m1bG/reservas2.webp");
 }
 
-.section-i-mod {
-  grid-area: section;
-  margin: 1rem;
-}
-.section-i-mod .side-photo .side-photo-item {
-  width: 94%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 0.5rem;
-}
-@media screen and (max-width: 450px) {
-  .section-i-mod {
-    margin: 0 0 1rem 0;
-  }
-}
-
 .aside-i {
   grid-area: aside;
   font-family: "Poppins", sans-serif;
@@ -332,42 +306,26 @@
   }
 }
 
-.article {
-  display: block;
-}
-.article .art-img-mod {
+.section .art-img-mod {
   width: 12rem;
   border-radius: 50%;
 }
-.article .m-top {
+.section .m-top {
   margin-top: 1rem;
-}
-
-.indicador {
-  width: 10px;
-  height: 10px;
-  align-self: flex-end;
-  margin-bottom: 3.2rem;
 }
 
 /*-----------------------*/
 /*galeria*/
-.parallax3 {
+.gallery {
   background-image: url("https://i.ibb.co/rxRSVzp/estudio-bloom-NYq-CYYqyml-M-unsplash.jpg");
-  /* Set a specific height */
   min-height: 30rem;
   width: 100%;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
-.parallax3 a {
+.gallery a {
   width: 100%;
 }
 @media screen and (max-width: 992px) {
-  .parallax3 {
+  .gallery {
     background-attachment: unset;
   }
 }
@@ -452,31 +410,6 @@
   align-items: center;
 }
 
-.gallery-main {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: auto;
-  gap: 1rem;
-  margin: 1rem;
-}
-@media screen and (max-width: 450px) {
-  .gallery-main {
-    grid-template-columns: 1fr;
-    grid-auto-rows: auto;
-  }
-}
-@media (min-width: 451px) and (max-width: 992px) {
-  .gallery-main {
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: auto;
-  }
-}
-
-.indicador {
-  width: 10px;
-  height: 10px;
-}
-
 /*-----------------------*/
 /*map-iframe*/
 .map {
@@ -509,6 +442,10 @@
 /*carta*/
 .body-c {
   background-color: rgb(255, 237, 179);
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-direction: column;
 }
 
 .main-c {
@@ -517,6 +454,16 @@
   align-items: center;
   flex-direction: row;
   margin: 1rem 5rem;
+}
+@media screen and (max-width: 450px) {
+  .main-c .margin-top-carta {
+    margin-top: 76px;
+  }
+}
+.main-c .img-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media screen and (max-width: 450px) {
   .main-c {
@@ -528,16 +475,6 @@
   .main-c {
     display: block;
   }
-}
-@media screen and (max-width: 450px) {
-  .main-c .margin-top-carta {
-    margin-top: 76px;
-  }
-}
-.main-c .img-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .border-right-carta {
@@ -640,31 +577,6 @@
 }
 
 /*-----------------------*/
-.main-n {
-  margin: 1rem;
-}
-.main-n .img-container .img-nos {
-  height: 27rem;
-  overflow-x: hidden;
-  object-fit: cover;
-  border-radius: 2%;
-}
-.main-n .img-container .img-nos--mod {
-  width: 50%;
-  border-radius: 4%;
-}
-.main-n .text-container {
-  flex-direction: column;
-}
-.main-n .text-container .title {
-  font-family: "Dancing Script", cursive;
-  font-size: 4rem;
-  text-align: center;
-}
-.main-n .text-container--mod {
-  margin-top: 1rem;
-}
-
 /*info-add (reservas - contacto)*/
 .info-add {
   flex-direction: column;

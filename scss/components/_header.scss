@@ -39,19 +39,12 @@
         @include flex(flex,center,center,column);
         .parallax {
             background-image: url("https://i.ibb.co/Jtbv8Kf/image-1.webp");
-            /* Set a specific height */
             min-height: 280px;
-            /* Create the parallax scrolling effect */
-            background-attachment:fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size:cover;
-            @media screen and (max-width:992px){
-                background-attachment:unset;
-            }
+            @extend %parallax-effect;
         }
         .parallax-mod {
-            background-image: url("https://i.ibb.co/8BxJ7ws/reservas.webp");
+            background-image: url("https://i.ibb.co/16kg3FR/image.webp");
+            /*https://i.ibb.co/gRxgMyV/image-2.webp*/
         }
         .top-i {
             width: 100%;

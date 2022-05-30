@@ -1,17 +1,10 @@
 /*galeria*/
-.parallax3 {
+.gallery {
     @extend %flex;
     background-image: url("https://i.ibb.co/rxRSVzp/estudio-bloom-NYq-CYYqyml-M-unsplash.jpg");
-  
-    /* Set a specific height */
     min-height: 30rem;
     width: 100%;
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @extend %parallax-effect;
     a {
         width: 100%;
     }
@@ -40,12 +33,12 @@
     
   }
   
-  .container2:hover .overlay{
+.container2:hover .overlay{
     opacity: 1;
     transform: scale(1);
   }
   
-  .overlay{
+.overlay{
     position: absolute;
     background-color: #b1ea7085;;
     width: 100%;
@@ -57,7 +50,7 @@
     
   }
   
-  .overlay span{
+.overlay span{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -67,14 +60,14 @@
     color: $color-texto;
   }
   
-  .container2 img{
+.container2 img{
     transition: transform .8s ease;
     width: 100%;
     object-fit: cover;
     height: 100%;
   }
   
-  .container2:hover img{
+.container2:hover img{
     transform: scale(1.1);
   }
 .gallery-intro {
@@ -95,27 +88,5 @@
         color: $color-texto;
         align-items: center;
     }
-}
-
-.gallery-main {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: auto;
-    gap: 1rem;
-    margin: 1rem;
-
-    @media screen and (max-width:450px) {
-        grid-template-columns: 1fr;
-        grid-auto-rows: auto;
-    }
-
-    @media (min-width:451px) and (max-width:992px) {
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: auto;
-    }
-}
-.indicador {
-    width: 10px;
-    height: 10px;
 }
 /*-----------------------*/
