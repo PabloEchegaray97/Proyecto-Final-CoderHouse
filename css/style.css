@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+::selection {
+  background-color: #b2ea70;
+  color: #1d0e1c;
+}
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -319,9 +324,6 @@
 .gallery {
   background-image: url("https://i.ibb.co/rxRSVzp/estudio-bloom-NYq-CYYqyml-M-unsplash.jpg");
   min-height: 30rem;
-  width: 100%;
-}
-.gallery a {
   width: 100%;
 }
 @media screen and (max-width: 992px) {
@@ -658,13 +660,17 @@
   font-size: 1rem;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  margin-bottom: 0.4rem;
+  margin-top: 0.4rem;
 }
 .form-container .form .form__item {
   background: rgb(255, 237, 179);
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   border: 1px solid hsl(343deg, 11%, 12%);
+}
+.form-container .form .form__item:focus {
+  outline: 3px solid #b2ea70;
+  border: none;
 }
 .form-container .form .form__item--mod {
   margin-bottom: 1rem;

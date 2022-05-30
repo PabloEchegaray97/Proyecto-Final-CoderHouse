@@ -32,14 +32,17 @@
             font-size: nth($font-size,1);
             font-family: $fuente-ppal;
             font-weight: 600;
-            margin-bottom: .4rem;
+            margin-top: .4rem;
         }
         .form__item {
             background: $color-texto-alt;
             padding: .5rem 1rem;
-            
             border-radius: .5rem;
             border: 1px solid $color-texto;
+            &:focus {
+                outline: 3px solid #b2ea70;;
+                border: none;
+            }
         }
         .form__item--mod {
             margin-bottom: 1rem;

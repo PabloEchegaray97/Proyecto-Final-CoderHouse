@@ -4,6 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+::selection {
+    background-color: #b2ea70;
+    color:#1d0e1c;
+}
 ::-webkit-scrollbar {
     display: none;
 }
