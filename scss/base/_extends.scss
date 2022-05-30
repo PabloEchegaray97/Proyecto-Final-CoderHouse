@@ -3,4 +3,12 @@
     justify-content: center;
     align-items: center;
 }
-
+%parallax-effect {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media screen and (max-width:992px){
+        background-attachment:unset;
+    }
+}

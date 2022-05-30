@@ -15,6 +15,13 @@
         font-size: nth($font-size,2);
     }
 }
+.intro-reserva-mod {
+    margin-top: 1rem;
+    @media screen and (max-width:450px) {
+        font-size: nth($font-size,2);
+        margin-top: 1rem;
+    }
+}
 .form-container {
     width: 100%;
     .form {
@@ -61,5 +68,16 @@
         width: auto;
         margin: 0 1rem;
     }
+}
+.form-reservas {
+    margin: 1rem 6rem;
+    @media screen and (max-width:450px) {
+        display: block;
+        margin: 1rem;   
+    }
+    @media (min-width:451px) and (max-width:992px) {
+        display: block; 
+    }
+    width: auto;
 }
 /*-----------------------*/
