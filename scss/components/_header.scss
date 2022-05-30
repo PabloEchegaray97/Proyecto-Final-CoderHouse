@@ -38,12 +38,21 @@
     .top-d {
         @include flex(flex,center,center,column);
         .parallax {
-            background-image: url("https://i.ibb.co/KNPKc6J/alo-mendiola-O5-D41-JB-w-H4-unsplash-1.webp");
+            background-image: url("https://i.ibb.co/pwZRRxC/edit-1.webp");
             min-height: 280px;
             @extend %parallax-effect;
         }
+        .parallax::before {
+            position: absolute;
+            content: "";
+            left: 0;
+            bottom: 0;
+            right: 0;
+            top: 0;
+            background: rgba(0, 0, 0, 0.4);
+        }
         .parallax-mod {
-            background-image: url("https://i.ibb.co/16kg3FR/image.webp");
+            background-image: url("https://i.ibb.co/0BCwXfC/top2.webp");
             /*https://i.ibb.co/gRxgMyV/image-2.webp*/
         }
         .top-i {
