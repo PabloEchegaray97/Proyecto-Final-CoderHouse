@@ -224,7 +224,7 @@
 }
 @media (min-width: 451px) and (max-width: 992px) {
   .header-i .top-d {
-    margin-top: 56px;
+    margin-top: 40px;
   }
 }
 .header-i .boton-carta {
@@ -313,7 +313,13 @@
 }
 .aside-block .aside-text {
   color: rgb(255, 237, 179);
+  font-size: 1.5rem;
   margin: 1rem;
+}
+@media screen and (max-width: 992px) {
+  .aside-block .aside-text {
+    font-size: 1rem;
+  }
 }
 
 .aside-intro {
@@ -492,7 +498,7 @@
 }
 @media screen and (max-width: 450px) {
   .main-c .margin-top-carta {
-    margin-top: 76px;
+    margin-top: 40px;
   }
 }
 .main-c .img-center {

@@ -57,7 +57,11 @@
     background-color: rgba(0, 0, 0, 0.6);
     .aside-text {
         color: $color-texto-alt;
+        font-size: nth($font-size,3 );
         margin: 1rem;
+        @media screen and (max-width:992px) {
+            font-size: nth($font-size,1);
+        }
     }
 }
 .aside-intro {
