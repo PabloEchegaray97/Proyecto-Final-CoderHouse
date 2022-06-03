@@ -94,7 +94,7 @@
         text-decoration: none;
         &:hover {
             color: $color-texto;
-            background-color: $color-texto-hover
+            background-color: $color-texto-hover;
         }
     @media screen and (max-width:450px) {
             position: absolute;
