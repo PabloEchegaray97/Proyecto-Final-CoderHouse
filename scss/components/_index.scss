@@ -42,7 +42,9 @@
     min-height: 14rem;
     background-image: url("https://i.ibb.co/9N4m1bG/reservas2.webp");
 }
-
+.parallax2100 {
+    height: 100vh;
+}
 .aside-i {
     grid-area: aside;
     font-family: $fuente-ppal;
@@ -52,7 +54,7 @@
 .aside-block {
     position: absolute;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.26);
+    background-color: rgba(0, 0, 0, 0.6);
     .aside-text {
         color: $color-texto-alt;
         margin: 1rem;
@@ -71,6 +73,7 @@
 }
 
 .section {
+    grid-area: section;
     .art-img-mod {
         width: 12rem;
         border-radius: 50%;
@@ -79,5 +82,14 @@
         margin-top: 1rem;
     }
 }
-
+.text-reviews {
+    text-align: center;
+    color: $color-texto;
+    a {
+        display: inline-block;
+        color: $color-texto;
+        text-decoration: none;
+        font-weight: 700;
+    }
+}
 /*-----------------------*/

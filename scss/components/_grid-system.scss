@@ -5,18 +5,17 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto auto auto auto;
     grid-template-areas: "header header header header"
-                         "aside aside aside aside"
                          "main main main main"
+                         "aside aside aside aside"
                          "footer footer footer footer";
 
     @media screen and (max-width:450px) {
         grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
         grid-template-areas: "header"
-            "aside"
-            "section"
-            "main"
-            "footer";
+                             "main"
+                             "aside"
+                             "footer";
     }
 }
 /*grid-system -pertenece a la seccion 'nosotros'-*/

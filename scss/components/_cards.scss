@@ -43,5 +43,9 @@
     .types {
         font-weight: 700;
     }
+    &:hover {
+        transform: scale(1.02);
+        transition: transform .1s ease-in-out .1s;
+    }
 }
 /*-----------------------*/

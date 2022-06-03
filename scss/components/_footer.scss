@@ -29,13 +29,15 @@
     }
     .footer-section {
         color: $color-texto-alt;
-        margin: 1rem 0;
+        margin: 1rem 1rem 0 0;
+        
         .footer-title {
             font-size: 1rem;
         }
         ul {
             list-style-type: none;
             font-size: .9rem;
+            padding: 0;
             a {
                 display: flex;
                 align-items: center;

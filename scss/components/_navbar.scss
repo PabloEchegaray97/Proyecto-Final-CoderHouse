@@ -1,14 +1,15 @@
 /*navbar*/
+.navbar {
+    padding:0 !important;
+}
 .nav-menu {
-    position: absolute;
+    position: fixed;
     z-index: 1;
     width: 100%;
     background: $bg-color-nav-footer;
     @extend %flex;
     .logo{
         width: 6rem;
-        margin-top: 1rem;
-        margin-left: 1rem;
         z-index: 1;
     @media (min-width:451px) and (max-width:992px) {
         display: none;
@@ -49,5 +50,8 @@ background-color: $bg-color-nav-footer;
         margin: 0;
     }
     }
+}
+.bg-nav {
+    background-color: rgba(0,0,0,.5);
 }
 /*-----------------------*/

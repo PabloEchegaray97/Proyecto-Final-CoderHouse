@@ -38,13 +38,13 @@
   background-color: rgb(255, 237, 179);
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto auto auto auto;
-  grid-template-areas: "header header header header" "aside aside aside aside" "main main main main" "footer footer footer footer";
+  grid-template-areas: "header header header header" "main main main main" "aside aside aside aside" "footer footer footer footer";
 }
 @media screen and (max-width: 450px) {
   .body-i {
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto auto;
-    grid-template-areas: "header" "aside" "section" "main" "footer";
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "header" "main" "aside" "footer";
   }
 }
 
@@ -66,16 +66,18 @@
 
 /*-----------------------*/
 /*navbar*/
+.navbar {
+  padding: 0 !important;
+}
+
 .nav-menu {
-  position: absolute;
+  position: fixed;
   z-index: 1;
   width: 100%;
   background: #1d0e1c;
 }
 .nav-menu .logo {
   width: 6rem;
-  margin-top: 1rem;
-  margin-left: 1rem;
   z-index: 1;
 }
 @media (min-width: 451px) and (max-width: 992px) {
@@ -127,6 +129,10 @@
     width: 3.6rem;
     margin: 0;
   }
+}
+
+.bg-nav {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 /*-----------------------*/
@@ -289,6 +295,10 @@
   background-image: url("https://i.ibb.co/9N4m1bG/reservas2.webp");
 }
 
+.parallax2100 {
+  height: 100vh;
+}
+
 .aside-i {
   grid-area: aside;
   font-family: "Poppins", sans-serif;
@@ -299,7 +309,7 @@
 .aside-block {
   position: absolute;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.26);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .aside-block .aside-text {
   color: rgb(255, 237, 179);
@@ -320,12 +330,26 @@
   }
 }
 
+.section {
+  grid-area: section;
+}
 .section .art-img-mod {
   width: 12rem;
   border-radius: 50%;
 }
 .section .m-top {
   margin-top: 1rem;
+}
+
+.text-reviews {
+  text-align: center;
+  color: hsl(343deg, 11%, 12%);
+}
+.text-reviews a {
+  display: inline-block;
+  color: hsl(343deg, 11%, 12%);
+  text-decoration: none;
+  font-weight: 700;
 }
 
 /*-----------------------*/
@@ -586,6 +610,10 @@
 .card-container .types {
   font-weight: 700;
 }
+.card-container:hover {
+  transform: scale(1.02);
+  transition: transform 0.1s ease-in-out 0.1s;
+}
 
 /*-----------------------*/
 /*info-add (reservas - contacto)*/
@@ -761,7 +789,7 @@
 }
 .footer-i .footer-section {
   color: rgb(255, 237, 179);
-  margin: 1rem 0;
+  margin: 1rem 1rem 0 0;
 }
 .footer-i .footer-section .footer-title {
   font-size: 1rem;
@@ -769,6 +797,7 @@
 .footer-i .footer-section ul {
   list-style-type: none;
   font-size: 0.9rem;
+  padding: 0;
 }
 .footer-i .footer-section ul a {
   display: flex;

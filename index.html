@@ -10,10 +10,10 @@
     <meta name="keywords"
         content="el, patio, restaurant, comida, mejicana, tacos, fajitas, quesadillas, nachos, ciudad, centro, mendoza, mexico, platos, originarios">
     <!-- open graph (para compartir en redes sociales) -->
-    <meta property:'og:type' content="Sitio web">
-    <meta property:'og:title' content="el patio | Restaurant de comida mejicana">
-    <meta property:'og:url' content="https://pabloechegaray97.github.io/Proyecto-Final-CoderHouse/index.html">
-    <meta property:'og:img' content="https://i.ibb.co/FmTcz1n/Sin-t-tulo-1.png">
+    <meta property='og:type' content="Sitio web">
+    <meta property='og:title' content="el patio | Restaurant de comida mejicana">
+    <meta property='og:url' content="https://pabloechegaray97.github.io/Proyecto-Final-CoderHouse/index.html">
+    <meta property='og:img' content="https://i.ibb.co/FmTcz1n/Sin-t-tulo-1.png">
     <!-- iconos -->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="resources/favicon.ico" type="image/x-icon">
@@ -30,22 +30,25 @@
 <body class="body-i">
     <h1 class="page-title">el patio | Restaurant de comida mejicana</h1>
     <header class="header-i">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent nav-menu">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-nav nav-menu">
             <div class="container-fluid align-items-start">
                 <a class="navbar-brand logo" href="#"><img src="resources/el-patio.svg" alt="el patio: logo"></a>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav align-items-center">
                         <li class="nav-item">
-                            <a class="nav-link font-mod" href="#nosotros">Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link font-mod" href="#carta">Carta</a>
+                            <a class="nav-link font-mod" href="pages/carta.html">Carta</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link font-mod" href="#reservas">Reservas</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link font-mod" href="#ubicacion">Ubicación</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link font-mod" href="#reviews">Reseñas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-mod" href="#nosotros">Nosotros</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link font-mod" href="pages/contacto.html">Contacto</a>
@@ -65,16 +68,19 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav align-items-center">
                         <li class="nav-item">
-                            <a class="nav-link font-mod" href="#nosotros">Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link font-mod" href="#carta">Carta</a>
+                            <a class="nav-link font-mod" href="pages/carta.html">Carta</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link font-mod" href="#reservas">Reservas</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link font-mod" href="#ubicacion">Ubicación</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link font-mod" href="#reviews">Reseñas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-mod" href="#nosotros">Nosotros</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link font-mod" href="pages/contacto.html">Contacto</a>
@@ -91,7 +97,6 @@
             <a href="pages/carta.html" class="boton-carta animate__animated animate__slideInUp" loading="lazy">Ver
                 carta</a>
         </div>
-
     </header>
     <main class="main-i">
         <div class="gallery-container">
@@ -109,13 +114,13 @@
                 <div id="carouselExampleSlidesOnly" class="carousel slide car-mod" data-bs-ride="carousel">
                     <div class="carousel-inner bg-car">
                         <div class="carousel-item active">
-                            <img src="resources/1-lite.webp" loading="lazy" class="img-fluid car-img-mod" alt="...">
+                            <img src="resources/1-lite.webp" class="img-fluid car-img-mod" alt="..." loading="lazy">
                         </div>
                         <div class="carousel-item">
-                            <img src="resources/fajitas_1_.webp" loading="lazy" class="img-fluid car-img-mod" alt="...">
+                            <img src="resources/fajitas_1_.webp" class="img-fluid car-img-mod" alt="..." loading="lazy">
                         </div>
                         <div class="carousel-item">
-                            <img src="resources/nachos.webp" loading="lazy" class="img-fluid car-img-mod" alt="...">
+                            <img src="resources/nachos.webp" class="img-fluid car-img-mod" alt="..." loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -138,17 +143,23 @@
             </div>
             <div class="intro-reserva intro-reserva-mod">Reservá tu mesa mediante el siguiente formulario:</div>
             <div class="form-container form-reservas">
-                <form action="" class="form d-flex">
+                <form action="" class="form d-flex" id="form">
                     <label for="nombre_apellido">Tu nombre y apellido:</label>
-                    <input type="text" name="nombre_apellido" class="form__item">
+                    <input type="text" name="name" class="form__item">
                     <label for="correo">Correo:</label>
-                    <input type="email" name="correo" id="" class="form__item">
-                    <label for="fecha">Fecha y hora:</label>
-                    <input type="date" class="form__item form__item--mod">
-                    <input type="time" class="form__item form__item--mod">
-                    <button type="submit" class="boton-contacto">Reservar</button>
+                    <input type="email" name="email" id="" class="form__item">
+                    <label for="date">Fecha y hora:</label>
+                    <input type="date" class="form__item form__item--mod" name="date">
+                    <input type="time" class="form__item form__item--mod" name="time">
+                    <button type="submit" class="boton-contacto" id="button">Reservar</button>
                     <span class="confirmacion">*Recibiras la confirmación de la reserva a tu correo electrónico</span>
                 </form>
+                <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+                </script>
+
+                <script type="text/javascript">
+                    emailjs.init('20cCOXFyp5Sb6HlM4')
+                </script>
             </div>
         </section>
         <section class="info-add d-flex">
@@ -160,9 +171,21 @@
                 </div>
                 <div class="icon-container">
                     <i class='bx bxl-gmail info-icon'></i>
+                    <span id="ubicacion"></span>
                     <div class="info-text">elpatio@unmail.com</div>
+                    
                 </div>
             </div>
+        </section>
+        <section class="map">
+            <i class='bx bxs-map map-icon map-icon'></i>
+            <h2 class="map-text">¿Dónde estamos?</h2>
+            <h2 class="map-text light">Bandera de Los Andes 1925</h2>
+            <h2 class="map-text map-text-m light">Ciudad de Mendoza</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.082460866442!2d-68.813516084815!3d-32.89598798093634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e093530f07335%3A0x35bdacd2405bd1!2sAv.%20Bandera%20de%20los%20Andes%201923%2C%20M5521ION%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1650436734595!5m2!1ses-419!2sar"
+                title="El patio ubicación" class="map-iframe" width="700" height="450" style="border:0;"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
         <section class="section" id="reviews">
             <div class="parallax2 parallax2-mod">
@@ -183,7 +206,7 @@
                             dolor at facilis nesciunt eos. Eae ducimus esse libero velit?</p>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 d-flex flex-column align-items-center">
-                        <img src="resources/persona-1-mod.jpg" class="img-fluid art-img-mod" alt="">
+                        <img src="resources/review2.webp" class="img-fluid art-img-mod" alt="">
                         <h5>Nombre Apellido</h5>
                         <img src="resources/4stars.png" alt="">
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, eaque tempora soluta cumque
@@ -194,7 +217,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 d-flex flex-column align-items-center">
-                        <img src="resources/persona-1-mod.jpg" class="img-fluid art-img-mod" alt="">
+                        <img src="resources/review3.webp" class="img-fluid art-img-mod" alt="">
                         <h5>Nombre Apellido</h5>
                         <img src="resources/4stars.png" alt="">
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, eaque tempora soluta cumque
@@ -203,31 +226,21 @@
                             dolor at facilis nesciunt eos. Eveniet sapiente deserunt quae ducimus esse libero velit?</p>
                     </div>
                 </div>
+                <div class="row text-reviews"><p>
+                    ¿Quieres aparecer en este apartado? Déjanos tu valoración en <a href="https://www.google.com/maps/place/Av.+Bandera+de+los+Andes+1923,+M5521ION,+Mendoza/@-32.895988,-68.811327,16z/data=!4m5!3m4!1s0x967e093530f07335:0x35bdacd2405bd1!8m2!3d-32.895988!4d-68.8113274?hl=es-419" target="_blank">Google Maps</a>
+                </p></div>
             </div>
         </section>
-        <div class="map" id="ubicacion">
-            <i class='bx bxs-map map-icon map-icon'></i>
-            <h2 class="map-text">¿Dónde estamos?</h2>
-            <h2 class="map-text light">Bandera de Los Andes 1925</h2>
-            <h2 class="map-text map-text-m light">Ciudad de Mendoza</h2>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.082460866442!2d-68.813516084815!3d-32.89598798093634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e093530f07335%3A0x35bdacd2405bd1!2sAv.%20Bandera%20de%20los%20Andes%201923%2C%20M5521ION%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1650436734595!5m2!1ses-419!2sar"
-                title="El patio ubicación" class="map-iframe" width="700" height="450" style="border:0;"
-                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+        
 
     </main>
     <aside class="aside-i" id="nosotros">
-        <div class="parallax2">
+        <div class="parallax2 parallax2100">
             <div class="aside-block">
                 <h3 class="aside-intro">Sobre nosotros</h3>
-                <p class="aside-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, vel fuga natus
-                    dignissimos itaque
-                    fugit harum. Quod labore tenetur quidem pariatur officiis, iusto dolores voluptates quo fugiat in
-                    nostrum blanditiis.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque eius hic ullam ad est eligendi
-                    adipisci ex, incidunt dolores consequuntur eos pariatur esse consequatur aspernatur, ipsam deserunt
-                    quod nostrum tenetur.</p>
+                <p class="aside-text">
+                    Desde 1997 dedicados a nuestro trabajo, fundado por Mexicanos. El Patio es un Restaurant que nació como una necesidad, originalmente comenzó como un puesto de comida callejera y con el paso del tiempo y gracias a muchas personas estamos aquí. Nos gusta lo que hacemos y nos apegamos a nuestras costumbres. Nuestra misión es transmitir con corazón y alma los sabores mas originales de Mexico. ¡Qué esperas para pasarte y probar nuestros mejores platos!
+                </p>
             </div>
         </div>
     </aside>
@@ -243,7 +256,7 @@
             <div class="footer-links">
                 <ul>
                     <li><a href="#nosotros">Nosotros</a></li>
-                    <li><a href="#carta">Carta</a></li>
+                    <li><a href="pages/carta.html">Carta</a></li>
                     <li><a href="#reservas">Reservas</a></li>
                     <li><a href="#reviews">Reseñas</a></li>
                     <li><a href="pages/contacto.html">Contacto</a></li>
@@ -272,5 +285,27 @@
     </script>
     <!-- ------ -->
 </body>
+<script>
+    const btn = document.getElementById('button');
+
+    document.getElementById('form')
+        .addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            btn.value = 'Sending...';
+
+            const serviceID = 'default_service';
+            const templateID = 'template_97fs1bt';
+
+            emailjs.sendForm(serviceID, templateID, this)
+                .then(() => {
+                    btn.value = 'Send Email';
+                    alert('Enviado. ¡Gracias por confiar en nosotros!');
+                }, (err) => {
+                    btn.value = 'Send Email';
+                    alert(JSON.stringify(err));
+                });
+        });
+</script>
 
 </html>
