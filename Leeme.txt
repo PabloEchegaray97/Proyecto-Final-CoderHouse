@@ -1,0 +1,6 @@
+SEO básico incluido con etiquetas, keywords, y img.
+Formularios funcionales, contacto & reservas (reply) con email-JS
+
+Pagina desarrollada para un restaurant ficticio, navegable desde una pagina principal y con 2 htmls adicionales (carta & contacto)
+Entre los apartados se encuentran: Carta - Reservas - Reseñas - Nosotros - Contacto (cada uno con su componente en sass)
+
