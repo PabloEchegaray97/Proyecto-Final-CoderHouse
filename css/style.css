@@ -158,7 +158,7 @@
   background: rgba(0, 0, 0, 0.4);
 }
 .header-i .top-d .parallax-mod {
-  background-image: url("https://i.ibb.co/0BCwXfC/top2.webp");
+  background-image: url("../resources/contacto.webp");
   /*https://i.ibb.co/gRxgMyV/image-2.webp*/
 }
 .header-i .top-d .top-i {
@@ -241,22 +241,22 @@
 }
 
 .parallax {
-  background-image: url("https://i.ibb.co/7vdsq6m/ck-schneider-5xlt-WMpk-N3-E-unsplash-3.webp");
+  background-image: url("../resources/hero2-mod.webp");
 }
 
 .parallax2 {
-  background-image: url("https://i.ibb.co/VW6p6Gj/bergqvist-TYj7ey6xn9-M-unsplash-1-1.webp");
+  background-image: url("../resources/nosotros.webp");
   min-height: 30rem;
 }
 
 .parallax2-mod {
   min-height: 14rem;
-  background-image: url("https://i.ibb.co/Y0pxH5h/lyn-giberson-Okhc-Mbf3v-Q0-unsplash-2.webp");
+  background-image: url("../resources/feedback_1_.webp");
 }
 
 .parallax3-mod {
   min-height: 14rem;
-  background-image: url("https://i.ibb.co/9N4m1bG/reservas2.webp");
+  background-image: url("../resources/reservas.webp");
 }
 
 .parallax2100 {
@@ -457,7 +457,7 @@
 }
 @media screen and (max-width: 450px) {
   .main-c .margin-top-carta {
-    margin-top: 56px;
+    margin-top: 79px;
   }
 }
 .main-c .img-center {
@@ -701,6 +701,9 @@
   .form-container .form {
     width: 100%;
   }
+}
+.form-container .form-mod {
+  width: 100%;
 }
 @media screen and (max-width: 450px) {
   .form-container {

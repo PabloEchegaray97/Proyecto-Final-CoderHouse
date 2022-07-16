@@ -25,22 +25,22 @@
     
 }
 .parallax {
-    background-image: url("https://i.ibb.co/7vdsq6m/ck-schneider-5xlt-WMpk-N3-E-unsplash-3.webp");
+    background-image: url("../resources/hero2-mod.webp");
     @extend %parallax-effect;
   }
 .parallax2 {
     @extend %flex;
-    background-image: url("https://i.ibb.co/VW6p6Gj/bergqvist-TYj7ey6xn9-M-unsplash-1-1.webp");
+    background-image: url("../resources/nosotros.webp");
     min-height: 30rem;
     @extend %parallax-effect;
 }
 .parallax2-mod {
     min-height: 14rem;
-    background-image: url("https://i.ibb.co/Y0pxH5h/lyn-giberson-Okhc-Mbf3v-Q0-unsplash-2.webp");
+    background-image: url("../resources/feedback_1_.webp");
 }
 .parallax3-mod {
     min-height: 14rem;
-    background-image: url("https://i.ibb.co/9N4m1bG/reservas2.webp");
+    background-image: url("../resources/reservas.webp");
 }
 .parallax2100 {
     height: 100vh;
