@@ -218,10 +218,14 @@
   .aside-block .aside-text {
     color: #ffedb3;
     font-size: 1.5rem;
+    text-indent: 2rem;
     margin: 1rem; }
     @media screen and (max-width: 992px) {
       .aside-block .aside-text {
         font-size: 1rem; } }
+  .aside-block .aside-text-mod {
+    text-indent: 0;
+    text-align: center; }
 
 .aside-intro {
   font-family: "Dancing Script", cursive;

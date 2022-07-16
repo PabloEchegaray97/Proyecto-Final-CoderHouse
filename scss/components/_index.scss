@@ -58,10 +58,15 @@
     .aside-text {
         color: $color-texto-alt;
         font-size: nth($font-size,3 );
+        text-indent: 2rem;
         margin: 1rem;
         @media screen and (max-width:992px) {
             font-size: nth($font-size,1);
         }
+    }
+    .aside-text-mod {
+        text-indent: 0;
+        text-align: center;
     }
 }
 .aside-intro {
