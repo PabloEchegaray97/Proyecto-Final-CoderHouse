@@ -1,14 +1,4 @@
 /*galeria*/
-.gallery {
-    @extend %flex;
-    background-image: url("https://i.ibb.co/pzPdrcd/estudio-bloom-NYq-CYYqyml-M-unsplash.webp");
-    min-height: 30rem;
-    width: 100%;
-    @extend %parallax-effect;
-    @media screen and (max-width:992px){
-        background-attachment:unset;
-    }
-}
 .bg-car {
     height: 100%;
 }
@@ -16,16 +6,18 @@
     height: 100%;
 }
 .carousel-item {
-    height: 100% !important;
+    height: 30rem !important;
+
 }
 .container2{
     width: 50%;
-    height: 400px;
     margin: 1rem auto;
+    margin-bottom: 2rem;
     position: relative;
     overflow: hidden;
-    @media screen and (max-width:600px) {
-        width: 90%;
+    border-radius: 1rem;
+    @media screen and (max-width:1200px) {
+        width: 80%;
     }
     
   }

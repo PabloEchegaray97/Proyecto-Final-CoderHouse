@@ -24,9 +24,11 @@
 }
 .form-container {
     width: 100%;
+    @extend %flex;
     .form {
         flex-direction: column;
-        margin: 2rem 0;
+        width: 50%;
+        margin: 1rem 0;
         label {
             color: $color-texto;
             font-size: nth($font-size,1);
@@ -65,6 +67,9 @@
         .confirmacion {
             font-size: .8rem;
             text-align: center;
+        }
+        @media screen and (max-width:992px) {
+            width: 100%;
         }
     }
     @media screen and (max-width:450px) {

@@ -38,7 +38,7 @@
     .top-d {
         @include flex(flex,center,center,column);
         .parallax {
-            background-image: url("https://i.ibb.co/pwZRRxC/edit-1.webp");
+            background-image: url("../resources/edit-1.webp");
             min-height: 280px;
             @extend %parallax-effect;
         }

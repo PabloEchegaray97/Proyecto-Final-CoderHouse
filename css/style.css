@@ -14,20 +14,20 @@
   display: none;
 }
 
-.gallery, .parallax2, .header-i .top-d .top-text, .header-i .video-container, .nav-menu {
+.form-container, .parallax2, .header-i .top-d .top-text, .header-i .video-container, .nav-menu {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.gallery, .parallax2, .parallax, .header-i .top-d .parallax {
+.parallax2, .parallax, .header-i .top-d .parallax {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 @media screen and (max-width: 992px) {
-  .gallery, .parallax2, .parallax, .header-i .top-d .parallax {
+  .parallax2, .parallax, .header-i .top-d .parallax {
     background-attachment: unset;
   }
 }
@@ -48,15 +48,6 @@
   }
 }
 
-/*grid-system -pertenece a la seccion 'nosotros'-*/
-@media (min-width: 451px) and (max-width: 992px) {
-  .body-i-mod {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto auto;
-    grid-template-areas: "header" "section" "aside" "main" "footer";
-  }
-}
-
 /*-----------------------*/
 /*titulo - SEO pertenece a los 5 html*/
 .page-title {
@@ -67,28 +58,23 @@
 /*-----------------------*/
 /*navbar*/
 .navbar {
-  padding: 0 !important;
+  position: absolute;
+  width: 100%;
+}
+@media screen and (max-width: 992px) {
+  .navbar {
+    background-color: #130d12;
+  }
 }
 
 .nav-menu {
-  position: fixed;
   z-index: 1;
   width: 100%;
-  background: #1d0e1c;
+  background: #130d12;
 }
 .nav-menu .logo {
   width: 6rem;
   z-index: 1;
-}
-@media (min-width: 451px) and (max-width: 992px) {
-  .nav-menu .logo {
-    display: none;
-  }
-}
-@media screen and (max-width: 992px) {
-  .nav-menu {
-    display: none;
-  }
 }
 
 .font-mod {
@@ -100,42 +86,20 @@
   color: #b2ea70 !important;
 }
 
-.movil {
-  display: none;
-  background-color: #1d0e1c;
-}
-@media screen and (max-width: 992px) {
-  .movil {
-    display: block;
-  }
-}
-.movil .border-nav {
-  border-color: transparent !important;
-}
-.movil .logo {
-  width: 6rem;
-  margin-top: 1rem;
-  margin-left: 1rem;
-  z-index: 1;
-}
-@media screen and (max-width: 450px) {
-  .movil .logo {
-    width: 2.8rem;
-    margin: 0 0 0 1rem;
-  }
-}
-@media (min-width: 451px) and (max-width: 992px) {
-  .movil .logo {
-    width: 3.6rem;
-    margin: 0;
-  }
-}
-
 .bg-nav {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
 /*-----------------------*/
+.logo {
+  width: 6rem;
+}
+
+.anular {
+  color: transparent !important;
+  border-color: transparent !important;
+}
+
 /*header*/
 .header-i {
   grid-area: header;
@@ -181,7 +145,7 @@
   flex-direction: column;
 }
 .header-i .top-d .parallax {
-  background-image: url("https://i.ibb.co/pwZRRxC/edit-1.webp");
+  background-image: url("../resources/edit-1.webp");
   min-height: 280px;
 }
 .header-i .top-d .parallax::before {
@@ -360,17 +324,6 @@
 
 /*-----------------------*/
 /*galeria*/
-.gallery {
-  background-image: url("https://i.ibb.co/pzPdrcd/estudio-bloom-NYq-CYYqyml-M-unsplash.webp");
-  min-height: 30rem;
-  width: 100%;
-}
-@media screen and (max-width: 992px) {
-  .gallery {
-    background-attachment: unset;
-  }
-}
-
 .bg-car {
   height: 100%;
 }
@@ -380,19 +333,20 @@
 }
 
 .carousel-item {
-  height: 100% !important;
+  height: 30rem !important;
 }
 
 .container2 {
   width: 50%;
-  height: 400px;
   margin: 1rem auto;
+  margin-bottom: 2rem;
   position: relative;
   overflow: hidden;
+  border-radius: 1rem;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) {
   .container2 {
-    width: 90%;
+    width: 80%;
   }
 }
 
@@ -696,7 +650,8 @@
 }
 .form-container .form {
   flex-direction: column;
-  margin: 2rem 0;
+  width: 50%;
+  margin: 1rem 0;
 }
 .form-container .form label {
   color: hsl(343deg, 11%, 12%);
@@ -721,7 +676,7 @@
 }
 .form-container .form .boton-contacto {
   padding: 0.2rem 1rem;
-  background-color: #1d0e1c;
+  background-color: #130d12;
   border-radius: 0.3rem;
   color: rgb(255, 237, 179);
   font-family: "Poppins", sans-serif;
@@ -736,6 +691,11 @@
 .form-container .form .confirmacion {
   font-size: 0.8rem;
   text-align: center;
+}
+@media screen and (max-width: 992px) {
+  .form-container .form {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 450px) {
   .form-container {
@@ -764,7 +724,7 @@
 /*footer*/
 .footer-i {
   grid-area: footer;
-  background-color: #1d0e1c;
+  background-color: #130d12;
   display: flex;
   justify-content: center;
   align-items: flex-start;

@@ -1,9 +1,13 @@
 /*navbar*/
 .navbar {
-    padding:0 !important;
+    position: absolute;
+    width: 100%;
+    @media screen and (max-width:992px) {
+        background-color: $bg-color-nav-footer;
+    }
 }
 .nav-menu {
-    position: fixed;
+
     z-index: 1;
     width: 100%;
     background: $bg-color-nav-footer;
@@ -11,13 +15,8 @@
     .logo{
         width: 6rem;
         z-index: 1;
-    @media (min-width:451px) and (max-width:992px) {
-        display: none;
     }
-    }
-@media screen and (max-width: 992px) {
-    display: none;
-}
+
 }
 .font-mod {
     font-size: 1.2rem;
@@ -27,31 +26,15 @@
         color: $color-texto-hover !important;
     }
 }
-.movil {
-display:none;
-background-color: $bg-color-nav-footer;
-@media screen and (max-width:992px) {
-    display: block;    
-}
-    .border-nav {
-        border-color:transparent !important;
-    }
-    .logo{
-        width: 6rem;
-        margin-top: 1rem;
-        margin-left: 1rem;
-        z-index: 1;
-    @media screen and (max-width: 450px) {
-        width: 2.8rem;
-        margin: 0 0 0 1rem;
-    }
-    @media (min-width:451px) and (max-width:992px) {
-        width: 3.6rem;
-        margin: 0;
-    }
-    }
-}
+
 .bg-nav {
     background-color: rgba(0,0,0,.5);
 }
 /*-----------------------*/
+.logo {
+    width: 6rem;
+}
+.anular {
+    color: transparent!important;
+    border-color: transparent !important;
+}

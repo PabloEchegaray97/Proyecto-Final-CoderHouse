@@ -30,37 +30,11 @@
 <body class="body-i">
     <h1 class="page-title">el patio | Restaurant de comida mejicana</h1>
     <header class="header-i">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-nav nav-menu">
-            <div class="container-fluid align-items-start">
-                <a class="navbar-brand logo" href="#"><img src="resources/el-patio.svg" alt="el patio: logo"></a>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav align-items-center">
-                        <li class="nav-item">
-                            <a class="nav-link font-mod" href="pages/carta.html">Carta</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link font-mod" href="#reservas">Reservas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link font-mod" href="#ubicacion">Ubicación</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link font-mod" href="#reviews">Reseñas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link font-mod" href="#nosotros">Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link font-mod" href="pages/contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-menu movil fixed-top">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-menu movil sticky-top">
             <div class="container-fluid">
                 <a class="navbar-brand logo" href="#"><img src="resources/el-patio.svg" alt="el patio: logo"></a>
-                <button class="navbar-toggler border-nav" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler border-nav anular" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -90,7 +64,7 @@
             </div>
         </nav>
         <div class="video-container">
-            <div class="parallax video-preview"></div>
+            <img src="./resources/hero-mod.png" alt="" class="parallax video-preview">
             <div class="slogan-container">
                 <h2 class="slogan">Sabores que hacen bien al corazón</h2>
             </div>
@@ -108,33 +82,33 @@
             </div>
 
         </div>
-        <div class="gallery">
-
-            <div class="container2">
-                <div id="carouselExampleSlidesOnly" class="carousel slide car-mod" data-bs-ride="carousel">
-                    <div class="carousel-inner bg-car">
-                        <div class="carousel-item active">
-                            <img src="resources/1-lite.webp" class="img-fluid car-img-mod" alt="..." loading="lazy">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="resources/fajitas_1_.webp" class="img-fluid car-img-mod" alt="..." loading="lazy">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="resources/nachos.webp" class="img-fluid car-img-mod" alt="..." loading="lazy">
-                        </div>
+        <div class="container2">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./resources/1-lite.webp" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./resources/2-lite.webp" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./resources/3-lite.webp" class="d-block w-100" alt="...">
                     </div>
                 </div>
-                <div>
-                    <a href="pages/carta.html">
-                        <div class="overlay">
-                            <span>Ver carta</span>
-                        </div>
-                    </a>
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-
-
+    
         </div>
+        
         <section class="section">
             <div class="parallax2 parallax3-mod" id="reservas">
                 <div class="aside-block">
@@ -173,7 +147,7 @@
                     <i class='bx bxl-gmail info-icon'></i>
                     <span id="ubicacion"></span>
                     <div class="info-text">elpatio@unmail.com</div>
-                    
+
                 </div>
             </div>
         </section>
@@ -226,12 +200,16 @@
                             dolor at facilis nesciunt eos. Eveniet sapiente deserunt quae ducimus esse libero velit?</p>
                     </div>
                 </div>
-                <div class="row text-reviews"><p>
-                    ¿Quieres aparecer en este apartado? Déjanos tu valoración en <a href="https://www.google.com/maps/place/Av.+Bandera+de+los+Andes+1923,+M5521ION,+Mendoza/@-32.895988,-68.811327,16z/data=!4m5!3m4!1s0x967e093530f07335:0x35bdacd2405bd1!8m2!3d-32.895988!4d-68.8113274?hl=es-419" target="_blank">Google Maps</a>
-                </p></div>
+                <div class="row text-reviews">
+                    <p>
+                        ¿Quieres aparecer en este apartado? Déjanos tu valoración en <a
+                            href="https://www.google.com/maps/place/Av.+Bandera+de+los+Andes+1923,+M5521ION,+Mendoza/@-32.895988,-68.811327,16z/data=!4m5!3m4!1s0x967e093530f07335:0x35bdacd2405bd1!8m2!3d-32.895988!4d-68.8113274?hl=es-419"
+                            target="_blank">Google Maps</a>
+                    </p>
+                </div>
             </div>
         </section>
-        
+
 
     </main>
     <aside class="aside-i" id="nosotros">
@@ -239,7 +217,11 @@
             <div class="aside-block">
                 <h3 class="aside-intro">Sobre nosotros</h3>
                 <p class="aside-text">
-                    Desde 1997 dedicados a nuestro trabajo, fundado por Mexicanos. El Patio es un Restaurant que nació como una necesidad, originalmente comenzó como un puesto de comida callejera y con el paso del tiempo y, gracias a muchas personas estamos aquí. Nos gusta lo que hacemos y nos apegamos a nuestras costumbres. Nuestra misión es transmitir con corazón y alma los sabores mas originales de México. ¡Que esperas para pasarte y probar nuestros mejores platos!
+                    Desde 1997 dedicados a nuestro trabajo, fundado por Mexicanos. El Patio es un Restaurant que nació
+                    como una necesidad, originalmente comenzó como un puesto de comida callejera y con el paso del
+                    tiempo y, gracias a muchas personas estamos aquí. Nos gusta lo que hacemos y nos apegamos a nuestras
+                    costumbres. Nuestra misión es transmitir con corazón y alma los sabores mas originales de México.
+                    ¡Que esperas para pasarte y probar nuestros mejores platos!
                 </p>
             </div>
         </div>
@@ -283,7 +265,7 @@
     <!-- scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script>
+        </script>
     <!-- ------ -->
 </body>
 <script>
