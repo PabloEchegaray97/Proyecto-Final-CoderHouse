@@ -425,7 +425,7 @@
       height: 17rem; } }
 
 .card-container .img-mod2 {
-  border-radius: 1%;
+  border-radius: 1rem;
   margin: 1rem; }
   @media screen and (max-width: 450px) {
     .card-container .img-mod2 {
