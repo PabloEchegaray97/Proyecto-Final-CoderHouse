@@ -4,6 +4,7 @@
     width: 100%;
     @media screen and (max-width:992px) {
         background-color: $bg-color-nav-footer;
+        position: fixed;
     }
 }
 .nav-menu {

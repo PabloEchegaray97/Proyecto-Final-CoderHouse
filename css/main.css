@@ -51,7 +51,8 @@
   width: 100%; }
   @media screen and (max-width: 992px) {
     .navbar {
-      background-color: #130d12; } }
+      background-color: #130d12;
+      position: fixed; } }
 
 .nav-menu {
   z-index: 1;
