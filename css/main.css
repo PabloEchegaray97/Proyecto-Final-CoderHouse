@@ -275,7 +275,7 @@
   border-radius: 1rem; }
   @media screen and (max-width: 1200px) {
     .container2 {
-      width: 80%; } }
+      width: 94%; } }
 
 .container2:hover .overlay {
   opacity: 1;
