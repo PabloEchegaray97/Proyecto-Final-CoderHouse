@@ -21,7 +21,7 @@
 
     }
     .item-title {
-        font-family: 'Dancing Script', cursive;
+        font-family: $fuente-sec;
         font-size: nth($font-size,6);
         text-align: center;
     }

@@ -12,6 +12,7 @@
     }
     .icon-container {
         @include flex (flex,center,center,column);
+        position: relative;
         margin: .7rem;
         .info-icon {
             font-size: nth($font-size,8);
