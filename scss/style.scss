@@ -27,5 +27,8 @@
 
 .bg-menu.sticky {
     background-color: $bg-color-nav-footer ;
-    padding: .5rem;
+    padding: .2rem 0;
+    @media screen and (max-width:992px) {
+        padding: .5rem 0;
+    }
 }

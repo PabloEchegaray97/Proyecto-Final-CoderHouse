@@ -79,7 +79,7 @@
 }
 
 .font-mod {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-family: "Poppins", sans-serif;
   color: rgb(255, 237, 179) !important;
 }
@@ -838,7 +838,12 @@
 
 .bg-menu.sticky {
   background-color: #130d12;
-  padding: 0.5rem;
+  padding: 0.2rem 0;
+}
+@media screen and (max-width: 992px) {
+  .bg-menu.sticky {
+    padding: 0.5rem 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
