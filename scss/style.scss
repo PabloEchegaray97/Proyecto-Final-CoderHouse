@@ -16,3 +16,16 @@
 @import './components/info-add';
 @import './components/forms';
 @import './components/footer';
+.navbar {
+    position: fixed;
+    width: 100%;
+    transition: 0.2s;
+    z-index: 4;
+    
+
+}
+
+.bg-menu.sticky {
+    background-color: $bg-color-nav-footer ;
+    padding: .5rem;
+}
