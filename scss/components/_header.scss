@@ -21,6 +21,7 @@
         .slogan {
             font-size: 4rem;
             color: $color-texto-alt;
+            
             @media screen and (max-width:450px) {
                 font-size: nth($font-size,3);
             }
@@ -40,6 +41,7 @@
         .parallax {
             background-image: url("../resources/edit-1.webp");
             min-height: 280px;
+
             @extend %parallax-effect;
         }
         .parallax::before {

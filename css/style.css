@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,500;1,600;1,700;1,900&family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Damion&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -116,7 +116,7 @@
 .header-i .slogan-container {
   color: rgb(255, 237, 179);
   position: absolute;
-  font-family: "Dancing Script", cursive;
+  font-family: "Damion", cursive;
 }
 .header-i .slogan-container .slogan {
   font-size: 4rem;
@@ -177,7 +177,7 @@
 .header-i .top-d .top-text {
   position: absolute;
   color: rgb(255, 237, 179);
-  font-family: "Dancing Script", cursive;
+  font-family: "Damion", cursive;
 }
 .header-i .top-d .top-text h2 {
   font-size: 3rem;
@@ -242,7 +242,7 @@
 }
 
 .parallax {
-  background-image: url("../resources/hero2-mod.webp");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../resources/hero2-mod.webp");
 }
 
 .parallax2 {
@@ -293,7 +293,7 @@
 }
 
 .aside-intro {
-  font-family: "Dancing Script", cursive;
+  font-family: "Damion", cursive;
   font-size: 3rem;
   color: rgb(255, 237, 179);
   padding: 1rem;
@@ -405,7 +405,7 @@
 }
 .gallery-intro .gallery-text-c {
   display: inline-block;
-  font-family: "Dancing Script", cursive;
+  font-family: "Damion", cursive;
   font-size: 1.8rem;
   color: hsl(343deg, 11%, 12%);
   align-items: center;
@@ -749,7 +749,7 @@
   margin: 1rem 2rem 0 0;
 }
 .footer-i .footer-des .font-mod {
-  font-family: "Dancing Script", cursive;
+  font-family: "Damion", cursive;
   font-size: 2rem;
 }
 .footer-i .footer-des .footer-text {

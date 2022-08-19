@@ -25,7 +25,8 @@
     
 }
 .parallax {
-    background-image: url("../resources/hero2-mod.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../resources/hero2-mod.webp");
+    
     @extend %parallax-effect;
   }
 .parallax2 {
