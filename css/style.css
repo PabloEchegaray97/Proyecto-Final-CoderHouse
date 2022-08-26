@@ -340,11 +340,11 @@
 }
 
 .carousel-item {
-  height: 30rem !important;
+  height: 68vh;
 }
 
 .container2 {
-  width: 50%;
+  width: 50vw;
   margin: 1rem auto;
   margin-bottom: 2rem;
   position: relative;
@@ -353,7 +353,7 @@
 }
 @media screen and (max-width: 1200px) {
   .container2 {
-    width: 94%;
+    width: 80vw;
   }
 }
 
