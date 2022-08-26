@@ -23,9 +23,13 @@
     }
 
     .map-iframe {
-        width: 80vw;
+        width: 50vw;
+        height: 68vh;
         margin-bottom: 1rem;
-        border-radius: .5rem;
+        border-radius: 1rem;
+        @media screen and (max-width:1200px) {
+            width: 80vw;
+        }
     }
 }
 /*-----------------------*/
