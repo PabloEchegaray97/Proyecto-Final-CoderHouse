@@ -454,6 +454,7 @@
   justify-content: space-between;
   align-items: stretch;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 .main-c {

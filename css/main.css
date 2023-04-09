@@ -31,12 +31,18 @@
   background-color: #ffedb3;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto auto auto auto;
-  grid-template-areas: "header header header header" "main main main main" "aside aside aside aside" "footer footer footer footer"; }
+  grid-template-areas: "header header header header"
+ "main main main main"
+ "aside aside aside aside"
+ "footer footer footer footer"; }
   @media screen and (max-width: 450px) {
     .body-i {
       grid-template-columns: 1fr;
       grid-template-rows: auto auto auto auto;
-      grid-template-areas: "header" "main" "aside" "footer"; } }
+      grid-template-areas: "header"
+ "main"
+ "aside"
+ "footer"; } }
 
 /*-----------------------*/
 /*titulo - SEO pertenece a los 5 html*/
@@ -354,7 +360,9 @@
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  flex-direction: column; }
+  flex-direction: column;
+  min-height: 100vh;
+}
 
 .main-c {
   display: flex;
