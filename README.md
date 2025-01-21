@@ -48,6 +48,5 @@ proyecto/
 
 Pablo Echegaray
 - LinkedIn: [Pablo Echegaray](https://www.linkedin.com/in/pablo-echegaray-a4a000241/)
-- GitHub: [@PabloEchegaray97](https://github.com/PabloEchegaray97)
 
 
